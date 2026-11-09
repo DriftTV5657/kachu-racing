@@ -1,14 +1,14 @@
 {
   "format": "vrca-racing",
   "version": 10,
-  "exportedAt": "2026-11-01T09:06:54.149Z",
+  "exportedAt": "2026-11-08T02:38:32.399Z",
   "data": {
     "races": [
       {
         "id": "mvmhznkzxacbop9",
         "date": "2026-10-17",
         "name": "メイクデビュー とりのす2000",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "稍重",
         "distance": 2400,
         "field": 13,
@@ -184,13 +184,16 @@
             "tactic": "",
             "time": 146.18
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
       },
       {
         "id": "mvn8x50p8zz1r9u",
         "date": "2026-10-17",
         "name": "メイクデビュー とりのす2000",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "稍重",
         "distance": 2000,
         "field": 12,
@@ -353,7 +356,10 @@
             "tactic": "",
             "time": 116.73
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
       },
       {
         "id": "mvna2ks9qh0eyg8",
@@ -535,7 +541,10 @@
             "time": 122,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
       },
       {
         "id": "mvnb7wux5ediy82",
@@ -691,13 +700,16 @@
             "tactic": "",
             "time": 89.15
           }
-        ]
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
       },
       {
         "id": "mvnx957p5xp9jcg",
         "date": "2026-10-21",
         "name": "未勝利戦(別定A) とりのす1600 A組",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "稍重",
         "distance": 1600,
         "field": 8,
@@ -817,13 +829,16 @@
             "time": 95.62,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "右回り"
       },
       {
         "id": "mvnxu5hq9wf7fz0",
         "date": "2026-10-21",
         "name": "未勝利戦(別定A) とりのす1600 B組",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "稍重",
         "distance": 1600,
         "field": 7,
@@ -921,13 +936,16 @@
             "tactic": "",
             "time": 95.27
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "右回り"
       },
       {
         "id": "mvnydu3e5iu4983",
         "date": "2026-10-21",
         "name": "未勝利戦(別定A) とりのす2400",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "稍重",
         "distance": 2400,
         "field": 13,
@@ -1117,7 +1135,10 @@
             "time": 144.72,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
       },
       {
         "id": "mvo0deeuumpnn19",
@@ -1313,7 +1334,10 @@
             "time": 118.56,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
       },
       {
         "id": "mvop3wpsgfdidfs",
@@ -1467,13 +1491,16 @@
             "time": 118.19,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
       },
       {
         "id": "mvopokh61bk4t6j",
         "date": "2026-10-25",
         "name": "未勝利戦(別定A) とりのす2200 A組",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "良",
         "distance": 2200,
         "field": 7,
@@ -1579,13 +1606,16 @@
             "time": 131.58,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "右回り"
       },
       {
         "id": "mvoqq1br28ozw44",
         "date": "2026-10-25",
         "name": "未勝利戦(別定A) とりのす2200 B組",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "良",
         "distance": 2200,
         "field": 8,
@@ -1705,13 +1735,16 @@
             "time": 126.92,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "右回り"
       },
       {
         "id": "mvorb3ja2zf5fwk",
         "date": "2026-10-25",
         "name": "おおかみギミック発売記念 OP戦(別定A) とりのす2200",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "良",
         "distance": 2200,
         "field": 7,
@@ -1817,7 +1850,10 @@
             "time": 127.09,
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "右回り"
       },
       {
         "id": "mvs96skihx5xh59",
@@ -1929,7 +1965,10 @@
             "tactic": "",
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
       },
       {
         "id": "mvs9hc8o6jw8m0a",
@@ -2153,13 +2192,16 @@
             "tactic": "",
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
       },
       {
         "id": "mvxlqj27dwz6t1w",
         "date": "2026-10-31",
         "name": "未勝利戦(別定A) とりのす2400 B組",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "不良",
         "distance": 2400,
         "field": 9,
@@ -2172,12 +2214,12 @@
             "jockey": "小雨xiaoyu",
             "horse": "デュメルドーラλ",
             "rank": 1,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 2,
+            "pm": 2,
+            "p3": 3,
+            "p4": 2,
             "agari": null,
-            "time": null,
+            "time": 143.47,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2186,12 +2228,12 @@
             "jockey": "toburuku",
             "horse": "アイザック",
             "rank": 2,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 8,
+            "pm": 8,
+            "p3": 5,
+            "p4": 4,
             "agari": null,
-            "time": null,
+            "time": 143.95,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2200,12 +2242,12 @@
             "jockey": "キョンシー",
             "horse": "リーフ努",
             "rank": 3,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 5,
+            "pm": 6,
+            "p3": 6,
+            "p4": 5,
             "agari": null,
-            "time": null,
+            "time": 143.95,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2214,12 +2256,12 @@
             "jockey": "結月アオバ",
             "horse": "エンジェルガーデン§",
             "rank": 4,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 3,
+            "pm": 4,
+            "p3": 4,
+            "p4": 3,
             "agari": null,
-            "time": null,
+            "time": 144.01,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2228,12 +2270,12 @@
             "jockey": "RenNeko12",
             "horse": "キンダンハイゴウ",
             "rank": 5,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 9,
+            "pm": 7,
+            "p3": 7,
+            "p4": 6,
             "agari": null,
-            "time": null,
+            "time": 144.04,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2242,12 +2284,12 @@
             "jockey": "雨乃ユウ",
             "horse": "レーゲンタイガー§",
             "rank": 6,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 6,
+            "pm": 3,
+            "p3": 2,
+            "p4": 7,
             "agari": null,
-            "time": null,
+            "time": 144.07,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2256,12 +2298,12 @@
             "jockey": "YuyaKuga",
             "horse": "ルチカホワイトレイ",
             "rank": 7,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 7,
+            "pm": 5,
+            "p3": 8,
+            "p4": 8,
             "agari": null,
-            "time": null,
+            "time": 144.33,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2270,12 +2312,12 @@
             "jockey": "Annulaire",
             "horse": "エアスピードЖ",
             "rank": 8,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 1,
+            "pm": 1,
+            "p3": 1,
+            "p4": 1,
             "agari": null,
-            "time": null,
+            "time": 144.52,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2284,22 +2326,25 @@
             "jockey": "ぎんねこ851",
             "horse": "ユーフォリア",
             "rank": 9,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 4,
+            "pm": 9,
+            "p3": 9,
+            "p4": 9,
             "agari": null,
-            "time": null,
+            "time": 145.18,
             "tactic": "",
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
       },
       {
         "id": "mvxltiyculamege",
         "date": "2026-10-31",
         "name": "未勝利戦(別定A) とりのす2400 A組",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "不良",
         "distance": 2400,
         "field": 9,
@@ -2312,12 +2357,12 @@
             "jockey": "東雲れいあ",
             "horse": "レイアーキャット羅",
             "rank": 1,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 1,
+            "pm": 1,
+            "p3": 1,
+            "p4": 1,
             "agari": null,
-            "time": null,
+            "time": 143.71,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2326,12 +2371,12 @@
             "jockey": "SHINSHI0080",
             "horse": "キガパλ",
             "rank": 2,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 5,
+            "pm": 9,
+            "p3": 9,
+            "p4": 7,
             "agari": null,
-            "time": null,
+            "time": 144.67,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2340,12 +2385,12 @@
             "jockey": "神威ルカ",
             "horse": "GlanFictionΨ",
             "rank": 3,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 6,
+            "pm": 5,
+            "p3": 4,
+            "p4": 6,
             "agari": null,
-            "time": null,
+            "time": 144.7,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2354,12 +2399,12 @@
             "jockey": "Sigure_Mia",
             "horse": "グランアルバ★★★",
             "rank": 4,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 9,
+            "pm": 6,
+            "p3": 8,
+            "p4": 8,
             "agari": null,
-            "time": null,
+            "time": 144.71,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2368,12 +2413,12 @@
             "jockey": "Nele-san",
             "horse": "ナノブースト羅",
             "rank": 5,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 7,
+            "pm": 4,
+            "p3": 5,
+            "p4": 4,
             "agari": null,
-            "time": null,
+            "time": 144.84,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2382,12 +2427,12 @@
             "jockey": "yakisushi0619",
             "horse": "タヌキトペプシトλ",
             "rank": 6,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 3,
+            "pm": 2,
+            "p3": 2,
+            "p4": 3,
             "agari": null,
-            "time": null,
+            "time": 144.89,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2396,12 +2441,12 @@
             "jockey": "Sirius.S",
             "horse": "ムーンレヴァリエλ",
             "rank": 7,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 4,
+            "pm": 3,
+            "p3": 3,
+            "p4": 2,
             "agari": null,
-            "time": null,
+            "time": 144.97,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2410,12 +2455,12 @@
             "jockey": "あかいくん",
             "horse": "メルキングギドラδ",
             "rank": 8,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 8,
+            "pm": 8,
+            "p3": 7,
+            "p4": 9,
             "agari": null,
-            "time": null,
+            "time": 145.04,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2424,22 +2469,25 @@
             "jockey": "さば煮",
             "horse": "パルティータ♪",
             "rank": 9,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 2,
+            "pm": 7,
+            "p3": 6,
+            "p4": 5,
             "agari": null,
-            "time": null,
+            "time": 145.16,
             "tactic": "",
             "weightAdjustment": null
           }
-        ]
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
       },
       {
         "id": "mvxlvmw81xkzg59",
         "date": "2026-10-31",
         "name": "オータムランタン賞 G3",
-        "surface": "平芝",
+        "surface": "芝",
         "ground": "不良",
         "distance": 2400,
         "field": 16,
@@ -2452,12 +2500,12 @@
             "jockey": "神威ルカ",
             "horse": "ルナシフォン怪",
             "rank": 1,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 12,
+            "pm": 12,
+            "p3": 13,
+            "p4": 6,
             "agari": null,
-            "time": null,
+            "time": 141.43,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2466,12 +2514,12 @@
             "jockey": "toburuku",
             "horse": "オイシイマンゴー¶",
             "rank": 2,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 3,
+            "pm": 1,
+            "p3": 1,
+            "p4": 1,
             "agari": null,
-            "time": null,
+            "time": 142.28,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2480,12 +2528,12 @@
             "jockey": "小雨xiaoyu",
             "horse": "ナスアダマスΩ",
             "rank": 3,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 2,
+            "pm": 5,
+            "p3": 5,
+            "p4": 4,
             "agari": null,
-            "time": null,
+            "time": 142.31,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2494,12 +2542,12 @@
             "jockey": "Sigure_Mia",
             "horse": "アグニイチバンボシΣ",
             "rank": 4,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 14,
+            "pm": 16,
+            "p3": 9,
+            "p4": 11,
             "agari": null,
-            "time": null,
+            "time": 142.36,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2508,12 +2556,12 @@
             "jockey": "結月アオバ",
             "horse": "インペリアルライン豊",
             "rank": 5,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 7,
+            "pm": 9,
+            "p3": 16,
+            "p4": 16,
             "agari": null,
-            "time": null,
+            "time": 142.37,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2522,12 +2570,12 @@
             "jockey": "RuM-らむ-",
             "horse": "DuoRequiem♪",
             "rank": 6,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 13,
+            "pm": 10,
+            "p3": 12,
+            "p4": 12,
             "agari": null,
-            "time": null,
+            "time": 142.38,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2536,12 +2584,12 @@
             "jockey": "Nele-san",
             "horse": "カオスストーム★★★",
             "rank": 7,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 16,
+            "pm": 15,
+            "p3": 10,
+            "p4": 10,
             "agari": null,
-            "time": null,
+            "time": 142.42,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2550,12 +2598,12 @@
             "jockey": "yakisushi0619",
             "horse": "LunaLuminous¶",
             "rank": 8,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 10,
+            "pm": 13,
+            "p3": 14,
+            "p4": 13,
             "agari": null,
-            "time": null,
+            "time": 142.53,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2564,12 +2612,12 @@
             "jockey": "Sirius.S",
             "horse": "ルナピアニシモ♪",
             "rank": 9,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 9,
+            "pm": 11,
+            "p3": 8,
+            "p4": 9,
             "agari": null,
-            "time": null,
+            "time": 142.62,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2578,12 +2626,12 @@
             "jockey": "YuyaKuga",
             "horse": "ルチカドレミコード★★",
             "rank": 10,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 14,
+            "pm": 14,
+            "p3": 15,
+            "p4": 15,
             "agari": null,
-            "time": null,
+            "time": 142.64,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2592,12 +2640,12 @@
             "jockey": "RenNeko12",
             "horse": "ナデオン",
             "rank": 11,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 11,
+            "pm": 7,
+            "p3": 11,
+            "p4": 14,
             "agari": null,
-            "time": null,
+            "time": 142.83,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2606,12 +2654,12 @@
             "jockey": "コントキ",
             "horse": "ステキナコルク豊",
             "rank": 12,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 6,
+            "pm": 2,
+            "p3": 2,
+            "p4": 5,
             "agari": null,
-            "time": null,
+            "time": 142.84,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2620,12 +2668,12 @@
             "jockey": "雨乃ユウ",
             "horse": "ナデナデスリスリβ",
             "rank": 13,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 5,
+            "pm": 8,
+            "p3": 7,
+            "p4": 8,
             "agari": null,
-            "time": null,
+            "time": 142.88,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2634,12 +2682,12 @@
             "jockey": "さば煮",
             "horse": "アナタニオクル豊",
             "rank": 14,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 8,
+            "pm": 6,
+            "p3": 6,
+            "p4": 7,
             "agari": null,
-            "time": null,
+            "time": 143.03,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2648,12 +2696,12 @@
             "jockey": "なぎっちゅ。",
             "horse": "Aufheben",
             "rank": 15,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 4,
+            "pm": 4,
+            "p3": 4,
+            "p4": 3,
             "agari": null,
-            "time": null,
+            "time": 143.04,
             "tactic": "",
             "weightAdjustment": null
           },
@@ -2662,12 +2710,1193 @@
             "jockey": "Annulaire",
             "horse": "サクラスピードγ",
             "rank": 16,
-            "p2": null,
-            "pm": null,
-            "p3": null,
-            "p4": null,
+            "p2": 1,
+            "pm": 3,
+            "p3": 3,
+            "p4": 2,
             "agari": null,
-            "time": null,
+            "time": 143.29,
+            "tactic": "",
+            "weightAdjustment": null
+          }
+        ],
+        "course": "とりのす競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
+      },
+      {
+        "id": "mw27nw1wv1w47ga",
+        "date": "2026-11-01",
+        "name": "未勝利戦(別定A) ケンターキー2000",
+        "surface": "ダート",
+        "ground": "良",
+        "distance": 2000,
+        "field": 12,
+        "grade": "未勝利",
+        "weightRule": "別定A",
+        "firstPrize": 400,
+        "entries": [
+          {
+            "id": "mw27f6mnn7zdguf",
+            "jockey": "Nele-san",
+            "horse": "ウエサマλ",
+            "rank": 1,
+            "p2": 10,
+            "pm": 6,
+            "p3": 7,
+            "p4": 10,
+            "agari": 31.68,
+            "time": 117.8,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnruk0omw",
+            "jockey": "結月アオバ",
+            "horse": "ツキノハリケーンα",
+            "rank": 2,
+            "p2": 11,
+            "pm": 4,
+            "p3": 8,
+            "p4": 8,
+            "agari": null,
+            "time": 117.88,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnopflc9g",
+            "jockey": "RenNeko12",
+            "horse": "キンダンハイゴウ",
+            "rank": 3,
+            "p2": 8,
+            "pm": 8,
+            "p3": 5,
+            "p4": 11,
+            "agari": 31.7,
+            "time": 117.89,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnbcyzdiv",
+            "jockey": "東雲れいあ",
+            "horse": "シルレイキャット",
+            "rank": 4,
+            "p2": 2,
+            "pm": 3,
+            "p3": 9,
+            "p4": 5,
+            "agari": 31.87,
+            "time": 117.95,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnuau2d49",
+            "jockey": "神威ルカ",
+            "horse": "ルナルナセブン豊",
+            "rank": 5,
+            "p2": 9,
+            "pm": 11,
+            "p3": 11,
+            "p4": 6,
+            "agari": 31.66,
+            "time": 117.97,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnd7x6g6y",
+            "jockey": "キョンシー",
+            "horse": "リーフ努",
+            "rank": 6,
+            "p2": 6,
+            "pm": 5,
+            "p3": 10,
+            "p4": 12,
+            "agari": 31.12,
+            "time": 117.97,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnq6fwud2",
+            "jockey": "siyuu007",
+            "horse": "テラコッタ羅",
+            "rank": 7,
+            "p2": 12,
+            "pm": 12,
+            "p3": 12,
+            "p4": 7,
+            "agari": 31.76,
+            "time": 118.02,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mniig7zct",
+            "jockey": "Annulaire",
+            "horse": "レーゲンブロッサムΨ",
+            "rank": 8,
+            "p2": 1,
+            "pm": 1,
+            "p3": 1,
+            "p4": 1,
+            "agari": 33.51,
+            "time": 118.22,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnkluqehr",
+            "jockey": "小雨xiaoyu",
+            "horse": "ナスジェネシアΨ",
+            "rank": 9,
+            "p2": 4,
+            "pm": 2,
+            "p3": 3,
+            "p4": 3,
+            "agari": 32.63,
+            "time": 118.38,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnvcoyw0i",
+            "jockey": "Pizaneko11",
+            "horse": "ステラルナティック",
+            "rank": 10,
+            "p2": 5,
+            "pm": 10,
+            "p3": 6,
+            "p4": 9,
+            "agari": 32.3,
+            "time": 118.41,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnh8exviy",
+            "jockey": "Sirius.S",
+            "horse": "フローデイジー",
+            "rank": 11,
+            "p2": 7,
+            "pm": 7,
+            "p3": 4,
+            "p4": 2,
+            "agari": 32.84,
+            "time": 118.46,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw27f6mnd14ttgg",
+            "jockey": "さば煮",
+            "horse": "サバノアシタΣ",
+            "rank": 12,
+            "p2": 3,
+            "pm": 9,
+            "p3": 2,
+            "p4": 4,
+            "agari": 33.96,
+            "time": 119.48,
+            "tactic": "",
+            "weightAdjustment": null
+          }
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
+      },
+      {
+        "id": "mw2970b17ntapxy",
+        "date": "2026-11-01",
+        "name": "メメントステークス G3",
+        "surface": "ダート",
+        "ground": "良",
+        "distance": 2000,
+        "field": 14,
+        "grade": "GIII",
+        "weightRule": "別定B",
+        "firstPrize": 4000,
+        "entries": [
+          {
+            "id": "mw292kspw67npzs",
+            "jockey": "結月アオバ",
+            "horse": "ツキノタイフーン怪",
+            "rank": 1,
+            "p2": 14,
+            "pm": 13,
+            "p3": 13,
+            "p4": 8,
+            "agari": 31.33,
+            "time": 120.04,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292ksptnpkqbu",
+            "jockey": "toburuku",
+            "horse": "ハローマンゴーδ",
+            "rank": 2,
+            "p2": 2,
+            "pm": 3,
+            "p3": 3,
+            "p4": 4,
+            "agari": 31.81,
+            "time": 120.19,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspqzv5kgz",
+            "jockey": "Sigure_Mia",
+            "horse": "レーゲンリゾート怪",
+            "rank": 3,
+            "p2": 12,
+            "pm": 12,
+            "p3": 14,
+            "p4": 9,
+            "agari": 31.29,
+            "time": 120.22,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspa6clfh7",
+            "jockey": "小雨xiaoyu",
+            "horse": "クロウトアピール★★",
+            "rank": 4,
+            "p2": 11,
+            "pm": 8,
+            "p3": 8,
+            "p4": 5,
+            "agari": 31.85,
+            "time": 120.26,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspe0omstn",
+            "jockey": "コントキ",
+            "horse": "ステキナコルク豊",
+            "rank": 5,
+            "p2": 6,
+            "pm": 4,
+            "p3": 4,
+            "p4": 3,
+            "agari": 32.08,
+            "time": 120.26,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspq84sr5t",
+            "jockey": "神威ルカ",
+            "horse": "LunaLuminous¶",
+            "rank": 6,
+            "p2": 9,
+            "pm": 11,
+            "p3": 7,
+            "p4": 7,
+            "agari": 31.78,
+            "time": 120.3,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292ksps6mkhx7",
+            "jockey": "Annulaire",
+            "horse": "セーヴアヴニールΣ",
+            "rank": 7,
+            "p2": 1,
+            "pm": 1,
+            "p3": 1,
+            "p4": 1,
+            "agari": 34.27,
+            "time": 120.33,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspm8w5q5g",
+            "jockey": "YuyaKuga",
+            "horse": "ルチカサンドリヨンλ",
+            "rank": 8,
+            "p2": 5,
+            "pm": 7,
+            "p3": 9,
+            "p4": 11,
+            "agari": 31.77,
+            "time": 120.45,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspwk464z7",
+            "jockey": "RuM-らむ-",
+            "horse": "レイジングロア",
+            "rank": 9,
+            "p2": 8,
+            "pm": 10,
+            "p3": 6,
+            "p4": 13,
+            "agari": 31.58,
+            "time": 120.51,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspyu8l5qv",
+            "jockey": "siyuu007",
+            "horse": "スタードラグノフ★★★",
+            "rank": 10,
+            "p2": 10,
+            "pm": 14,
+            "p3": 12,
+            "p4": 2,
+            "agari": 32.64,
+            "time": 120.57,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspy0w4ii4",
+            "jockey": "さば煮",
+            "horse": "ナデナデナデナデ★★★",
+            "rank": 11,
+            "p2": 4,
+            "pm": 9,
+            "p3": 11,
+            "p4": 14,
+            "agari": 31.76,
+            "time": 120.67,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspyjugjyh",
+            "jockey": "キョンシー",
+            "horse": "Outsight努",
+            "rank": 12,
+            "p2": 13,
+            "pm": 6,
+            "p3": 10,
+            "p4": 12,
+            "agari": 32.09,
+            "time": 120.71,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspqarl8iw",
+            "jockey": "Nele-san",
+            "horse": "TheCosmicPuppetsΣ",
+            "rank": 13,
+            "p2": 7,
+            "pm": 5,
+            "p3": 5,
+            "p4": 6,
+            "agari": 32.64,
+            "time": 120.73,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw292kspc8gfd4i",
+            "jockey": "雨乃ユウ",
+            "horse": "ナデナデスリスリβ",
+            "rank": 14,
+            "p2": 3,
+            "pm": 2,
+            "p3": 2,
+            "p4": 10,
+            "agari": 32.73,
+            "time": 121.42,
+            "tactic": "",
+            "weightAdjustment": null
+          }
+        ],
+        "course": "ケンターキー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "未指定"
+      },
+      {
+        "id": "mw33psh2qiylg3u",
+        "date": "2026-11-04",
+        "name": "未勝利戦(別定A)トンキョー2400",
+        "surface": "芝",
+        "ground": "不良",
+        "distance": 2400,
+        "field": 17,
+        "grade": "未勝利",
+        "weightRule": "別定A",
+        "firstPrize": 400,
+        "entries": [
+          {
+            "id": "mw33e5rjb378hmc",
+            "jockey": "toburuku",
+            "horse": "フロートゥルーラブΣ",
+            "rank": 1,
+            "p2": 15,
+            "pm": 14,
+            "p3": 16,
+            "p4": 13,
+            "agari": 30.94,
+            "time": 140.84,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rj2gm7b43",
+            "jockey": "東雲れいあ",
+            "horse": "シルレイキャット",
+            "rank": 2,
+            "p2": 12,
+            "pm": 12,
+            "p3": 14,
+            "p4": 9,
+            "agari": 31.51,
+            "time": 141.25,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjj035pab",
+            "jockey": "YuyaKuga",
+            "horse": "ルチカホワイトレイ",
+            "rank": 3,
+            "p2": 10,
+            "pm": 9,
+            "p3": 13,
+            "p4": 15,
+            "agari": 31.32,
+            "time": 141.25,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjbziqjzi",
+            "jockey": "メデタイラー",
+            "horse": "フローサプライズλ",
+            "rank": 4,
+            "p2": 4,
+            "pm": 15,
+            "p3": 11,
+            "p4": 17,
+            "agari": 31.11,
+            "time": 141.27,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rj2c8ld2a",
+            "jockey": "雨乃ユウ",
+            "horse": "レーゲンタイガー§",
+            "rank": 5,
+            "p2": 2,
+            "pm": 1,
+            "p3": 3,
+            "p4": 14,
+            "agari": 31.44,
+            "time": 141.36,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjnr6yidk",
+            "jockey": "siyuu007",
+            "horse": "グランアルバ★★★",
+            "rank": 6,
+            "p2": 14,
+            "pm": 11,
+            "p3": 12,
+            "p4": 7,
+            "agari": 31.96,
+            "time": 141.51,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rj78ilqfd",
+            "jockey": "Nele-san",
+            "horse": "テラコッタ羅",
+            "rank": 7,
+            "p2": 5,
+            "pm": 7,
+            "p3": 9,
+            "p4": 16,
+            "agari": 31.62,
+            "time": 141.54,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjsh9trli",
+            "jockey": "小雨xiaoyu",
+            "horse": "ナスジェネシアΨ",
+            "rank": 8,
+            "p2": 9,
+            "pm": 3,
+            "p3": 4,
+            "p4": 2,
+            "agari": 33.12,
+            "time": 141.57,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjs72e2u7",
+            "jockey": "きびもち",
+            "horse": "ファイアストライクΣ",
+            "rank": 9,
+            "p2": 16,
+            "pm": 16,
+            "p3": 15,
+            "p4": 12,
+            "agari": 31.98,
+            "time": 141.68,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjh0zip16",
+            "jockey": "くぁたん",
+            "horse": "ケイノユメ★★★",
+            "rank": 10,
+            "p2": 17,
+            "pm": 17,
+            "p3": 17,
+            "p4": 11,
+            "agari": 32.14,
+            "time": 141.81,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rj0gc15t1",
+            "jockey": "RenNeko12",
+            "horse": "キンダンハイゴウ",
+            "rank": 11,
+            "p2": 11,
+            "pm": 13,
+            "p3": 6,
+            "p4": 8,
+            "agari": 32.42,
+            "time": 141.93,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rj5v6t370",
+            "jockey": "カイ＿声帯損傷中",
+            "horse": "クロスウィザードΣ",
+            "rank": 12,
+            "p2": 3,
+            "pm": 10,
+            "p3": 10,
+            "p4": 5,
+            "agari": 32.88,
+            "time": 142.06,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjjcukefi",
+            "jockey": "神威ルカ",
+            "horse": "ルナルナセブン豊",
+            "rank": 13,
+            "p2": 6,
+            "pm": 8,
+            "p3": 8,
+            "p4": 6,
+            "agari": 33.69,
+            "time": 142.08,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjk1j9jg5",
+            "jockey": "ぎんねこ851",
+            "horse": "カナシール★★★",
+            "rank": 14,
+            "p2": 7,
+            "pm": 5,
+            "p3": 5,
+            "p4": 10,
+            "agari": 32.89,
+            "time": 142.51,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rj19mtwbc",
+            "jockey": "Sirius.S",
+            "horse": "アナタニオクル豊",
+            "rank": 15,
+            "p2": 13,
+            "pm": 6,
+            "p3": 7,
+            "p4": 3,
+            "agari": 33.85,
+            "time": 142.56,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rj8gmi42c",
+            "jockey": "さば煮",
+            "horse": "テディーラグドール★★★",
+            "rank": 16,
+            "p2": 1,
+            "pm": 2,
+            "p3": 1,
+            "p4": 4,
+            "agari": 34.14,
+            "time": 142.8,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw33e5rjw2gj6g0",
+            "jockey": "まっつん",
+            "horse": "チナッチャンΣ",
+            "rank": 17,
+            "p2": 8,
+            "pm": 4,
+            "p3": 2,
+            "p4": 1,
+            "agari": 35.36,
+            "time": 143.46,
+            "tactic": "",
+            "weightAdjustment": null
+          }
+        ],
+        "course": "トンキョー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
+      },
+      {
+        "id": "mw3505tau8hsn9l",
+        "date": "2026-11-04",
+        "name": "OP(別定A)落葉ステークストンキョー2400",
+        "surface": "芝",
+        "ground": "不良",
+        "distance": 2400,
+        "field": 12,
+        "grade": "OP(別定A)",
+        "weightRule": "別定A",
+        "firstPrize": 800,
+        "entries": [
+          {
+            "id": "mw34x9hqzlthepw",
+            "jockey": "雨乃ユウ",
+            "horse": "レーゲンニシグモ",
+            "rank": 1,
+            "p2": 1,
+            "pm": 1,
+            "p3": 1,
+            "p4": 1,
+            "agari": 35.27,
+            "time": 139.96,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hqhbmscbu",
+            "jockey": "東雲れいあ",
+            "horse": "レイアーキャット羅",
+            "rank": 2,
+            "p2": 2,
+            "pm": 2,
+            "p3": 2,
+            "p4": 2,
+            "agari": 33.14,
+            "time": 141.05,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hqsq5783e",
+            "jockey": "小雨xiaoyu",
+            "horse": "オクラネバリンチョβ",
+            "rank": 3,
+            "p2": 4,
+            "pm": 3,
+            "p3": 3,
+            "p4": 4,
+            "agari": 31.94,
+            "time": 141.14,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hq4bhm9sh",
+            "jockey": "toburuku",
+            "horse": "アイザック",
+            "rank": 4,
+            "p2": 11,
+            "pm": 12,
+            "p3": 12,
+            "p4": 5,
+            "agari": 31.58,
+            "time": 141.21,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hqmliiqzv",
+            "jockey": "siyuu007",
+            "horse": "スタードラグノフ★★★",
+            "rank": 5,
+            "p2": 12,
+            "pm": 11,
+            "p3": 11,
+            "p4": 9,
+            "agari": 31.34,
+            "time": 141.22,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hqtr1npvc",
+            "jockey": "神威ルカ",
+            "horse": "ルナステラーΣ",
+            "rank": 6,
+            "p2": 9,
+            "pm": 8,
+            "p3": 8,
+            "p4": 11,
+            "agari": null,
+            "time": 141.35,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hq98nif09",
+            "jockey": "Sigure_Mia",
+            "horse": "GlanFictionΨ",
+            "rank": 7,
+            "p2": 6,
+            "pm": 4,
+            "p3": 4,
+            "p4": 3,
+            "agari": 32.51,
+            "time": 141.39,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hq83aokqf",
+            "jockey": "キョンシー",
+            "horse": "リーフ努",
+            "rank": 8,
+            "p2": 5,
+            "pm": 10,
+            "p3": 10,
+            "p4": 8,
+            "agari": 31.52,
+            "time": 141.42,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hqoo5dh5h",
+            "jockey": "RenNeko12",
+            "horse": "カオスノヴァ",
+            "rank": 9,
+            "p2": 8,
+            "pm": 7,
+            "p3": 7,
+            "p4": 6,
+            "agari": 31.89,
+            "time": 141.5,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hq25sapsk",
+            "jockey": "なぎっちゅ。",
+            "horse": "ネオナノガ★★★★",
+            "rank": 10,
+            "p2": 3,
+            "pm": 6,
+            "p3": 6,
+            "p4": 12,
+            "agari": 31.33,
+            "time": 141.52,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hqj3ceogi",
+            "jockey": "YuyaKuga",
+            "horse": "ルチカドレミコード★★",
+            "rank": 11,
+            "p2": 7,
+            "pm": 5,
+            "p3": 5,
+            "p4": 10,
+            "agari": 31.46,
+            "time": 141.54,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw34x9hqiud3gdv",
+            "jockey": "Nele-san",
+            "horse": "TheCosmicPuppetsΣ",
+            "rank": 12,
+            "p2": 10,
+            "pm": 9,
+            "p3": 9,
+            "p4": 7,
+            "agari": 31.94,
+            "time": 141.81,
+            "tactic": "",
+            "weightAdjustment": null
+          }
+        ],
+        "course": "トンキョー競馬場",
+        "legacyConverted": true,
+        "routeInfo": "左回り"
+      },
+      {
+        "id": "mw77lfndilg5lhg",
+        "date": "2026-11-07",
+        "name": "未勝利戦(別定A) ケンターキー1600",
+        "course": "ケンターキー競馬場",
+        "surface": "ダート",
+        "routeInfo": "未指定",
+        "ground": "良",
+        "distance": 1600,
+        "field": 12,
+        "grade": "未勝利",
+        "weightRule": "別定A",
+        "firstPrize": 400,
+        "entries": [
+          {
+            "id": "mw776beldx89xd7",
+            "jockey": "東雲れいあ",
+            "horse": "シルレイキャット",
+            "rank": 1,
+            "p2": 2,
+            "pm": 4,
+            "p3": 5,
+            "p4": 5,
+            "agari": 29.88,
+            "time": 86.25,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776belpowakml",
+            "jockey": "小雨xiaoyu",
+            "horse": "コスノテイオーΣ",
+            "rank": 2,
+            "p2": 10,
+            "pm": 7,
+            "p3": 2,
+            "p4": 1,
+            "agari": 31.28,
+            "time": 86.32,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776belfklng8d",
+            "jockey": "siyuu007",
+            "horse": "ツキノハリケーンα",
+            "rank": 3,
+            "p2": 11,
+            "pm": 9,
+            "p3": 9,
+            "p4": 9,
+            "agari": 29.48,
+            "time": 86.32,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776bell5h2v70",
+            "jockey": "Sigure_Mia",
+            "horse": "アグニザッパーλ",
+            "rank": 4,
+            "p2": 9,
+            "pm": 3,
+            "p3": 4,
+            "p4": 3,
+            "agari": 30.64,
+            "time": 86.35,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776bel6ui7z4q",
+            "jockey": "雨乃ユウ",
+            "horse": "カオスノヴァ",
+            "rank": 5,
+            "p2": 7,
+            "pm": 6,
+            "p3": 10,
+            "p4": 11,
+            "agari": 29.57,
+            "time": 86.36,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776bellbjroer",
+            "jockey": "おとおと",
+            "horse": "パルティータ♪",
+            "rank": 6,
+            "p2": 6,
+            "pm": 5,
+            "p3": 7,
+            "p4": 6,
+            "agari": 29.93,
+            "time": 86.41,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776bel5bj5xi4",
+            "jockey": "くぁたん",
+            "horse": "ケイノユメ★★★",
+            "rank": 7,
+            "p2": 12,
+            "pm": 12,
+            "p3": 11,
+            "p4": 10,
+            "agari": 29.44,
+            "time": 86.51,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776belqgpy9co",
+            "jockey": "キョンシー",
+            "horse": "リーフ努",
+            "rank": 8,
+            "p2": 4,
+            "pm": 11,
+            "p3": 12,
+            "p4": 12,
+            "agari": 29.14,
+            "time": 86.61,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776belef7knmt",
+            "jockey": "yakisushi0619",
+            "horse": "テラコッタ羅",
+            "rank": 9,
+            "p2": 5,
+            "pm": 10,
+            "p3": 8,
+            "p4": 8,
+            "agari": 30.03,
+            "time": 86.62,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776belqrojd4g",
+            "jockey": "なぎっちゅ。",
+            "horse": "ScoopRuler★★★",
+            "rank": 10,
+            "p2": 8,
+            "pm": 8,
+            "p3": 6,
+            "p4": 2,
+            "agari": 30.7,
+            "time": 86.82,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776bels4u562m",
+            "jockey": "カイ＿声帯損傷中",
+            "horse": "クロスウィザードΣ",
+            "rank": 11,
+            "p2": 1,
+            "pm": 1,
+            "p3": 1,
+            "p4": 4,
+            "agari": 32.2,
+            "time": 87.58,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw776belo3z1zln",
+            "jockey": "さば煮",
+            "horse": "サバノアシタΣ",
+            "rank": 12,
+            "p2": 3,
+            "pm": 2,
+            "p3": 3,
+            "p4": 7,
+            "agari": 32.11,
+            "time": 88.06,
+            "tactic": "",
+            "weightAdjustment": null
+          }
+        ]
+      },
+      {
+        "id": "mw781nreehsawmj",
+        "date": "2026-11-07",
+        "name": "OP(別定A)とりのいち記念 ケンターキー1600",
+        "course": "ケンターキー競馬場",
+        "surface": "ダート",
+        "routeInfo": "未指定",
+        "ground": "良",
+        "distance": 1600,
+        "field": 10,
+        "grade": "未勝利",
+        "weightRule": "別定A",
+        "firstPrize": 400,
+        "entries": [
+          {
+            "id": "mw77qaanorm8hif",
+            "jockey": "東雲れいあ",
+            "horse": "シノレーキャット",
+            "rank": 1,
+            "p2": 9,
+            "pm": 10,
+            "p3": 10,
+            "p4": 6,
+            "agari": 29.15,
+            "time": 87.84,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaang62pxx2",
+            "jockey": "inブリ",
+            "horse": "アンバージャックλ",
+            "rank": 2,
+            "p2": 6,
+            "pm": 7,
+            "p3": 1,
+            "p4": 1,
+            "agari": 30.64,
+            "time": 87.91,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaanumxsc5o",
+            "jockey": "きびもち",
+            "horse": "ナデナデナデナデ★★★",
+            "rank": 3,
+            "p2": 4,
+            "pm": 5,
+            "p3": 7,
+            "p4": 7,
+            "agari": 29.65,
+            "time": 87.98,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaanxo9smwo",
+            "jockey": "小雨xiaoyu",
+            "horse": "ミルフィギドラ",
+            "rank": 4,
+            "p2": 8,
+            "pm": 2,
+            "p3": 3,
+            "p4": 2,
+            "agari": 30.32,
+            "time": 88.01,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaanq4m1fnp",
+            "jockey": "YuyaKuga",
+            "horse": "ルチカサンドリヨンλ",
+            "rank": 5,
+            "p2": 5,
+            "pm": 3,
+            "p3": 5,
+            "p4": 8,
+            "agari": 29.69,
+            "time": 88.11,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaan666be7f",
+            "jockey": "siyuu007",
+            "horse": "TheCosmicPuppetsΣ",
+            "rank": 6,
+            "p2": 7,
+            "pm": 8,
+            "p3": 6,
+            "p4": 5,
+            "agari": 29.79,
+            "time": 88.17,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaanc2zovyk",
+            "jockey": "雨乃ユウ",
+            "horse": "ルナルナセブン豊",
+            "rank": 7,
+            "p2": 1,
+            "pm": 1,
+            "p3": 2,
+            "p4": 3,
+            "agari": 30.45,
+            "time": 88.29,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaanc4eju1e",
+            "jockey": "MiYaBi_o_o",
+            "horse": "キンダンハイゴウ",
+            "rank": 8,
+            "p2": 2,
+            "pm": 4,
+            "p3": 4,
+            "p4": 4,
+            "agari": null,
+            "time": 88.45,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaan8rba7w7",
+            "jockey": "さば煮",
+            "horse": "テディーブラウニーλ",
+            "rank": 9,
+            "p2": 3,
+            "pm": 9,
+            "p3": 9,
+            "p4": 10,
+            "agari": 29.59,
+            "time": 88.56,
+            "tactic": "",
+            "weightAdjustment": null
+          },
+          {
+            "id": "mw77qaanqoheu04",
+            "jockey": "キョンシー",
+            "horse": "Outsight努",
+            "rank": 10,
+            "p2": 10,
+            "pm": 6,
+            "p3": 8,
+            "p4": 9,
+            "agari": 30.1,
+            "time": 88.86,
             "tactic": "",
             "weightAdjustment": null
           }
@@ -2709,7 +3938,10 @@
       "RuM-らむ-",
       "ぎんねこ851",
       "SHINSHI0080",
-      "yakisushi0619"
+      "yakisushi0619",
+      "メデタイラー",
+      "おとおと",
+      "MiYaBi_o_o"
     ],
     "horses": [
       "ナスブラウニー",
@@ -2798,7 +4030,31 @@
       "ナノブースト羅",
       "タヌキトペプシトλ",
       "メルキングギドラδ",
-      "DuoRequiem♪"
+      "DuoRequiem♪",
+      "ツキノハリケーンα",
+      "ナスジェネシアΨ",
+      "ツキノタイフーン怪",
+      "ファイアストライクΣ",
+      "ネオナノガ★★★★",
+      "LOTGH★★★★",
+      "アブナイレパード§",
+      "エクスチルナイト",
+      "オバオカラニゲルナ",
+      "オンソクミサイル暴",
+      "ゴーイントゥムーン§",
+      "コスノテイオーΣ",
+      "コスノライセンス★★★",
+      "コスノライメイ",
+      "サケンダコルクλ",
+      "シナシナキャットβ",
+      "シノレーキャット",
+      "シュベルトゲベール豊",
+      "スリープアテロヨ",
+      "チノファング",
+      "ヒナターフ",
+      "マイジャグラーβ",
+      "ムーンクロス",
+      "リグルシナヨ★"
     ],
     "owners": [
       "小雨xiaoyu",
@@ -2838,7 +4094,13 @@
       "yakisushi0619",
       "きなこっこ祭",
       "RuM-らむ-",
-      "SHINSHI0080"
+      "SHINSHI0080",
+      "メデタイラー",
+      "yoda_vr32",
+      "こっすー",
+      "うにまるi",
+      "おとおと",
+      "MiYaBi_o_o"
     ],
     "horseOwners": {
       "ナスブラウニー": "小雨xiaoyu",
@@ -2869,7 +4131,7 @@
       "Outsight努": "キョンシー",
       "ナデオン": "RenNeko12",
       "レーゲンリゾート怪": "雨乃ユウ",
-      "カオスストーム★★★": "RenNeko12",
+      "カオスストーム★★★": "Nele-san",
       "LunaLuminous¶": "神威ルカ",
       "ナスカレント♪": "小雨xiaoyu",
       "スタードラグノフ★★★": "siyuu007",
@@ -2926,7 +4188,31 @@
       "ナノブースト羅": "Nele-san",
       "タヌキトペプシトλ": "Nagare -ながれ-",
       "メルキングギドラδ": "あかいくん",
-      "DuoRequiem♪": "RuM-らむ-"
+      "DuoRequiem♪": "RuM-らむ-",
+      "ツキノハリケーンα": "結月アオバ",
+      "ナスジェネシアΨ": "小雨xiaoyu",
+      "ツキノタイフーン怪": "結月アオバ",
+      "ファイアストライクΣ": "Nele-san",
+      "ネオナノガ★★★★": "なぎっちゅ。",
+      "LOTGH★★★★": "yakisushi0619",
+      "アブナイレパード§": "kingnaka2357",
+      "エクスチルナイト": "yoda_vr32",
+      "オバオカラニゲルナ": "きなこっこ祭",
+      "オンソクミサイル暴": "SHINSHI0080",
+      "ゴーイントゥムーン§": "さば煮",
+      "コスノテイオーΣ": "こっすー",
+      "コスノライセンス★★★": "こっすー",
+      "コスノライメイ": "こっすー",
+      "サケンダコルクλ": "コントキ",
+      "シナシナキャットβ": "ぎんねこ851",
+      "シノレーキャット": "ぎんねこ851",
+      "シュベルトゲベール豊": "SHINSHI0080",
+      "スリープアテロヨ": "きなこっこ祭",
+      "チノファング": "SHINSHI0080",
+      "ヒナターフ": "うにまるi",
+      "マイジャグラーβ": "東雲れいあ",
+      "ムーンクロス": "桜月ミヅキ",
+      "リグルシナヨ★": "きなこっこ祭"
     },
     "groundByDate": {
       "2026-10-17": "稍重",
@@ -2934,7 +4220,8 @@
       "2026-10-21": "稍重",
       "2026-10-24": "良",
       "2026-10-25": "良",
-      "2026-10-31": "不良"
+      "2026-10-31": "不良",
+      "2026-11-01": "良"
     },
     "tripleSeries": [],
     "specialTitles": {
@@ -2966,9 +4253,924 @@
             "milestone": 5,
             "date": "2026-10-28",
             "source": "catalog-v16"
+          },
+          {
+            "id": "venue-ケンターキー競馬場-first",
+            "title": "ケンターキーの勝者",
+            "reason": "ケンターキー競馬場で初勝利",
+            "date": "2026-10-28",
+            "milestone": 5,
+            "source": "venue-v30"
           }
         ],
         "activeId": "special-era-beginning"
+      },
+      "リーフ努": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "近走の熟練の直線の強襲者",
+            "reason": "直近5走で「4角からゴールまで3番手以上進出」2回以上（該当2回／対象5走）",
+            "catalogId": "stretch-recent-2",
+            "milestone": 5,
+            "date": "2026-11-01",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "セーヴアヴニールΣ": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "短距離の萌芽の旋回の魔術師",
+            "reason": "1600m以下で「2角→4角で5番手以上進出」1回以上（該当1回／対象2走）",
+            "catalogId": "corner5-short-1",
+            "milestone": 5,
+            "date": "2026-11-01",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "レーゲンリゾート怪": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "伝説の掲示板の番人",
+            "reason": "全戦で「5着以内」4回以上（該当4回／対象5走）",
+            "catalogId": "board-all-4",
+            "milestone": 5,
+            "date": "2026-11-01",
+            "source": "catalog-v16"
+          },
+          {
+            "id": "venue-ケンターキー競馬場-board",
+            "title": "ケンターキーの常連",
+            "reason": "ケンターキー競馬場で掲示板3回以上",
+            "date": "2026-11-01",
+            "milestone": 5,
+            "source": "venue-v30"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "LunaLuminous¶": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "晴天の萌芽の殿からの逆襲者",
+            "reason": "良馬場で「2角後方から勝利」1回以上（該当1回／対象3走）",
+            "catalogId": "deepwin-good-1",
+            "milestone": 5,
+            "date": "2026-11-01",
+            "source": "catalog-v16"
+          },
+          {
+            "id": "venue-ケンターキー競馬場-first",
+            "title": "ケンターキーの勝者",
+            "reason": "ケンターキー競馬場で初勝利",
+            "date": "2026-11-01",
+            "milestone": 5,
+            "source": "venue-v30"
+          },
+          {
+            "id": "venue-ケンターキー競馬場-board",
+            "title": "ケンターキーの常連",
+            "reason": "ケンターキー競馬場で掲示板3回以上",
+            "date": "2026-11-01",
+            "milestone": 5,
+            "source": "venue-v30"
+          },
+          {
+            "id": "venue-ケンターキー競馬場-record",
+            "title": "ケンターキーの刻印",
+            "reason": "ケンターキー競馬場で現コースレコード保持",
+            "date": "2026-11-01",
+            "milestone": 5,
+            "source": "venue-v30"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "ルチカホワイトレイ": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "雨脚の熟練の直線の強襲者",
+            "reason": "稍重・重・不良で「4角からゴールまで3番手以上進出」2回以上（該当2回／対象4走）",
+            "catalogId": "stretch-wet-2",
+            "milestone": 5,
+            "date": "2026-11-04",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "アナタニオクル豊": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "明日を拓く新星",
+            "reason": "5走達成。これからの活躍を期待",
+            "catalogId": "fallback",
+            "milestone": 5,
+            "date": "2026-11-04",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "ルナルナセブン豊": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "近走の熟練のコーナーの卓越者",
+            "reason": "直近5走で「2角→4角で3番手以上進出」2回以上（該当3回／対象5走）",
+            "catalogId": "corner3-recent-2",
+            "milestone": 5,
+            "date": "2026-11-04",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "キンダンハイゴウ": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "緑野の萌芽のコーナーの卓越者",
+            "reason": "平芝で「2角→4角で3番手以上進出」2回以上（該当2回／対象3走）",
+            "catalogId": "corner3-turf-1",
+            "milestone": 5,
+            "date": "2026-11-04",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "スタードラグノフ★★★": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "中距離の萌芽の旋回の魔術師",
+            "reason": "1801〜2200mで「2角→4角で5番手以上進出」1回以上（該当1回／対象2走）",
+            "catalogId": "corner5-middle-1",
+            "milestone": 5,
+            "date": "2026-11-04",
+            "source": "catalog-v16"
+          },
+          {
+            "id": "venue-とりのす競馬場-first",
+            "title": "とりのすの勝者",
+            "reason": "とりのす競馬場で初勝利",
+            "date": "2026-11-04",
+            "milestone": 5,
+            "source": "venue-v30"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "カオスノヴァ": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "ケンターキーの熟練の直線の強襲者",
+            "reason": "ケンターキー競馬場で「4角からゴールまで3番手以上進出」2回以上（該当2回／対象3走）",
+            "catalogId": "stretch-venue2-2",
+            "milestone": 5,
+            "date": "2026-11-07",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "パルティータ♪": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "萌芽の旋回の魔術師",
+            "reason": "全戦で「2角→4角で5番手以上進出」1回以上（該当1回／対象5走）",
+            "catalogId": "corner5-all-1",
+            "milestone": 5,
+            "date": "2026-11-07",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "テラコッタ羅": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "ケンターキーの萌芽の旋回の魔術師",
+            "reason": "ケンターキー競馬場で「2角→4角で5番手以上進出」1回以上（該当1回／対象3走）",
+            "catalogId": "corner5-venue2-1",
+            "milestone": 5,
+            "date": "2026-11-07",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "クロスウィザードΣ": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "明日を拓く新星",
+            "reason": "5走達成。これからの活躍を期待",
+            "catalogId": "fallback",
+            "milestone": 5,
+            "date": "2026-11-07",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      },
+      "TheCosmicPuppetsΣ": {
+        "items": [
+          {
+            "id": "race-5",
+            "title": "明日を拓く新星",
+            "reason": "5走達成。これからの活躍を期待",
+            "catalogId": "fallback",
+            "milestone": 5,
+            "date": "2026-11-07",
+            "source": "catalog-v16"
+          }
+        ],
+        "activeId": "race-5"
+      }
+    },
+    "bloodlines": {
+      "Aufheben": {
+        "sire": "スパークルミミミミΩ◎",
+        "dam": "ドリルスマッシャー★■",
+        "damsire": "ソレガドウシタ†"
+      },
+      "DuoRequiem♪": {
+        "sire": "PerfectHarmony",
+        "dam": "LegendSymphony",
+        "damsire": "DoubleForte"
+      },
+      "F1GTaRm豊": {
+        "sire": "リーフ努○",
+        "dam": "マクラレーン",
+        "damsire": "テノリタイガー†"
+      },
+      "GlanFictionΨ": {
+        "sire": "オールフィクション★†",
+        "dam": "ステラバニーΦ●",
+        "damsire": "ナスジェネシアΨ†"
+      },
+      "LunaLuminous¶": {
+        "sire": "LunaWellsβ",
+        "dam": "ルナスピリット★",
+        "damsire": "シャドウスピリット"
+      },
+      "Neargo": {
+        "sire": "ルチカイビルツイン†",
+        "dam": "シルファーΨ",
+        "damsire": "フニャオスノコエ♪◎"
+      },
+      "Outsight努": {
+        "sire": "アグニトマホークΣ†",
+        "dam": "アグニタンザΘ†",
+        "damsire": "フニャオスリザード"
+      },
+      "ScoopRuler★★★": {
+        "sire": "ゴシップ†",
+        "dam": "AlleXceed†",
+        "damsire": "KnoxsTen†"
+      },
+      "test": {
+        "sire": "ピザゲート†",
+        "dam": "AlleXceed†",
+        "damsire": "KnoxsTen†"
+      },
+      "TheCosmicPuppetsΣ": {
+        "sire": "ミカヅキコルク★★★",
+        "dam": "ルチカエメラルド†",
+        "damsire": "ルチカサファイヤ§†"
+      },
+      "アイザック": {
+        "sire": "ジツニオモシロイ†",
+        "dam": "maromaro§",
+        "damsire": "キルルネ"
+      },
+      "アグニイチバンボシΣ": {
+        "sire": "アグニアギラオ◎",
+        "dam": "スターライトホープ†",
+        "damsire": "イプシロン†"
+      },
+      "アグニザッパーλ": {
+        "sire": "アグニマタタビ†",
+        "dam": "ダークルビーβ",
+        "damsire": "オーチャード★"
+      },
+      "アグニトマホークΣ": {
+        "sire": "レーゲンカガリ★★★†",
+        "dam": "ルナミサイル怪†",
+        "damsire": "MakeYouMineδ†"
+      },
+      "アナタニオクル豊": {
+        "sire": "ジョッキーオトオト豊",
+        "dam": "アバダセプト¶†",
+        "damsire": "POG★★★"
+      },
+      "アンバージャックλ": {
+        "sire": "イェスマンズ",
+        "dam": "ノットインブリード豊",
+        "damsire": "ワカンネフォーエバ"
+      },
+      "インペリアルライン豊": {
+        "sire": "ディープサンクタケ豊◆",
+        "dam": "ツキノディストピア★",
+        "damsire": "シリウスクリスタル†"
+      },
+      "ウエサマλ": {
+        "sire": "レーゲンニシグモ",
+        "dam": "スパークルライダー†",
+        "damsire": "ロードコルク★"
+      },
+      "エアスピードЖ": {
+        "sire": "サクラノソラ",
+        "dam": "HighSpeedSkγ▼",
+        "damsire": "リュウカノソラ"
+      },
+      "エクボックスλ": {
+        "sire": "リーフ努†",
+        "dam": "Porsche119Σ†",
+        "damsire": "AnswerRevolution★★"
+      },
+      "エンジェルガーデン§": {
+        "sire": "ツキノザナドゥ",
+        "dam": "ツキノディストピア★",
+        "damsire": "シリウスクリスタル†"
+      },
+      "オイシイマンゴー¶": {
+        "sire": "orenjiβ",
+        "dam": "tadokoroβ",
+        "damsire": "プラウドタッターキ"
+      },
+      "オオイナルイチゲキ★★★": {
+        "sire": "ビッグボーナス★★",
+        "dam": "イタミワケ★★★★",
+        "damsire": "アグニパピルス★★★"
+      },
+      "オクラネバリンチョβ": {
+        "sire": "ナスエクリプスγ†",
+        "dam": "コスノヴァルハラ",
+        "damsire": "オオニゲノソラ◎"
+      },
+      "カオスストーム★★★": {
+        "sire": "ヤシキブリザード★★★",
+        "dam": "カオスブレイク★†",
+        "damsire": "ジツニウンチ★★★†"
+      },
+      "カオスノヴァ": {
+        "sire": "ヤシキブリザード★★★",
+        "dam": "カオスブレイク★†",
+        "damsire": "ジツニウンチ★★★†"
+      },
+      "カナコイン§": {
+        "sire": "マイジャグラーβ†",
+        "dam": "カナレット†",
+        "damsire": "カナシール★★★†"
+      },
+      "カナシール★★★": {
+        "sire": "チョクセンルルネ◎",
+        "dam": "シャドウソール●",
+        "damsire": "ヘビーマメヒナタ"
+      },
+      "キガパλ": {
+        "sire": "HorlickSky¶†",
+        "dam": "チノサダメ†",
+        "damsire": "ヤシキハジケロ"
+      },
+      "キビトマラナイ§": {
+        "sire": "キビアズライトλ†",
+        "dam": "キビリボーン",
+        "damsire": "キビエクリプス"
+      },
+      "キンダンハイゴウ": {
+        "sire": "ヤシキブリザード★★★",
+        "dam": "カオスブレイク★†",
+        "damsire": "ジツニウンチ★★★†"
+      },
+      "グランアルバ★★★": {
+        "sire": "オールフィクション★†",
+        "dam": "ステラバニーΦ○",
+        "damsire": "ナスジェネシアΨ†"
+      },
+      "クロウトアピール★★": {
+        "sire": "ソレドール★★★†",
+        "dam": "ナスフラペチーノ★★★†",
+        "damsire": "シリウスクリスタル†"
+      },
+      "クロスウィザードΣ": {
+        "sire": "レーゲンシップウ",
+        "dam": "アグニターザンナ豊◆",
+        "damsire": "アグニマタタビ†"
+      },
+      "ケイノユメ★★★": {
+        "sire": "ケイドリーム",
+        "dam": "ケイディオλ",
+        "damsire": "ケイシデンロード暴◆"
+      },
+      "サクラスピードγ": {
+        "sire": "サクラノソラ",
+        "dam": "HighSpeedSkγ†",
+        "damsire": "リュウカノソラ"
+      },
+      "サバノアシタΣ": {
+        "sire": "サバノシオカゼ",
+        "dam": "サバノフリル◎",
+        "damsire": "アオイイフリートλ†"
+      },
+      "ジャックオランタン": {
+        "sire": "スパークルザンテツΣ†",
+        "dam": "マクラレーン",
+        "damsire": "テノリタイガー†"
+      },
+      "シルレイキャット": {
+        "sire": "カナゲーム★★",
+        "dam": "シルシノキャット★★★†",
+        "damsire": "シルバーレイア"
+      },
+      "スタードラグノフ★★★": {
+        "sire": "Neargo†",
+        "dam": "スタージャベリン†",
+        "damsire": "タンセイ†"
+      },
+      "ステキナコルク豊": {
+        "sire": "クチユクコルク豊†",
+        "dam": "サケンダコルクλ",
+        "damsire": "サケブコルク怪"
+      },
+      "ステラルナティック": {
+        "sire": "インブリードタケシ†",
+        "dam": "ヤシキブレイク†",
+        "damsire": "ヤシキカリオストロΣ"
+      },
+      "セーヴアヴニールΣ": {
+        "sire": "セーヴダッシュ★†",
+        "dam": "セーヴミエルλ†",
+        "damsire": "チョクセンセキ"
+      },
+      "タヌキトペプシトλ": {
+        "sire": "タヌキトキミト†",
+        "dam": "フウマアズラエル",
+        "damsire": "フウマデバイン"
+      },
+      "ダレヨリマエニ怪": {
+        "sire": "エッグチートバーガ羅",
+        "dam": "マエヲオエ",
+        "damsire": "ドデカフォーエバー★▽"
+      },
+      "チナッチャンΣ": {
+        "sire": "ニブルヘイム★†",
+        "dam": "ジャトヤ★★",
+        "damsire": "パエトーン★"
+      },
+      "ツキノタイフーン怪": {
+        "sire": "ツキノハリケーンα●",
+        "dam": "ツキノコントレイルΦ▽",
+        "damsire": "ルチカフライト★†"
+      },
+      "ツキノハリケーンα": {
+        "sire": "ツキノカサブランカη",
+        "dam": "スターライトゲート★",
+        "damsire": "オイシイマヨ★★★†"
+      },
+      "テディーブラウニーλ": {
+        "sire": "テディーピンシャー",
+        "dam": "メデタイハバキリ★★",
+        "damsire": "メデタイハラキリ★★★●"
+      },
+      "テディーラグドール★★★": {
+        "sire": "テディネムλ",
+        "dam": "ルチカアズライト豊†",
+        "damsire": "ウンチ◎"
+      },
+      "デュメルギドラ★★": {
+        "sire": "ソレドール★★★",
+        "dam": "ナスカモネギ♪†",
+        "damsire": "ネギトロ†"
+      },
+      "デュメルドーラλ": {
+        "sire": "ドュメルワンフォー",
+        "dam": "ドュメルワンスリー§",
+        "damsire": "ドュメルテン"
+      },
+      "テラコッタ羅": {
+        "sire": "セブンスキー★★",
+        "dam": "フローマギアλ†",
+        "damsire": "ウィザードシステム◇"
+      },
+      "ナスアダマスΩ": {
+        "sire": "ナスエクリプスγ†",
+        "dam": "ナスサーベル★★†",
+        "damsire": "ナスハントε†"
+      },
+      "ナスカレント♪": {
+        "sire": "ネギトロ†",
+        "dam": "ナスマーレ★★★†",
+        "damsire": "ルチカトルマリン暴†"
+      },
+      "ナスジェネシアΨ": {
+        "sire": "コルクサイレント†",
+        "dam": "ナスジェネシスε○",
+        "damsire": "サクラジェネシス"
+      },
+      "ナスブラウニー": {
+        "sire": "ネギカカオ暴",
+        "dam": "ナスアークトゥルスβ",
+        "damsire": "プロメテウスλ"
+      },
+      "ナデオン": {
+        "sire": "ナデペリオン†",
+        "dam": "ナデナデアメアメ§◎",
+        "damsire": "フニャオスマンド†"
+      },
+      "ナデナデスリスリβ": {
+        "sire": "ナデペリオン†",
+        "dam": "ナデナデアメアメ§◎",
+        "damsire": "フニャオスマンド†"
+      },
+      "ナデナデナデナデ★★★": {
+        "sire": "フニャオスタラ†",
+        "dam": "カナデΣ",
+        "damsire": "フニャオスダンガン†"
+      },
+      "ナノブースト羅": {
+        "sire": "タヌキリバイブ",
+        "dam": "タヌキトアナタト",
+        "damsire": "タヌキホットβ"
+      },
+      "ヌルセクター暴": {
+        "sire": "ウラギルコルクλ†",
+        "dam": "マツノレイ★★★",
+        "damsire": "マツノサンライズλ"
+      },
+      "ネオナノガ★★★★": {
+        "sire": "KnoxsTen†",
+        "dam": "ナノガ†",
+        "damsire": "ピザゲート■"
+      },
+      "パスジェネシス★★★": {
+        "sire": "DahliasKey¶",
+        "dam": "パスタラヴィスタ★□",
+        "damsire": "ユメミルキカイ"
+      },
+      "パルティータ♪": {
+        "sire": "トナリノシバブルーλ",
+        "dam": "ネヴァーセイバイ★★★★",
+        "damsire": "ラスヌーナ★★★†"
+      },
+      "ハローマンゴーδ": {
+        "sire": "ミラクルポン§",
+        "dam": "パペププププ★★★",
+        "damsire": "パプ"
+      },
+      "ファイアストライクΣ": {
+        "sire": "ソレドール★★★†",
+        "dam": "ナスフラペチーノ★★★†",
+        "damsire": "シリウスクリスタル†"
+      },
+      "フローサプライズλ": {
+        "sire": "ウィリアムボーン★",
+        "dam": "タヌキトペプシトλ□",
+        "damsire": "タヌキトキミト†"
+      },
+      "フローデイジー": {
+        "sire": "アグニオータム§□",
+        "dam": "フローマーガレット★★★†",
+        "damsire": "ThisIsOurShow★★★"
+      },
+      "フロートゥルーラブΣ": {
+        "sire": "アグニオータム§□",
+        "dam": "フローマーガレット★★★†",
+        "damsire": "ThisIsOurShow★★★"
+      },
+      "マガリャンイス": {
+        "sire": "レーゲンパラノイア§†",
+        "dam": "フライルルーシュ○",
+        "damsire": "フェザールーク"
+      },
+      "ミルフィギドラ": {
+        "sire": "ヤシキブリザード★★★",
+        "dam": "カオスブレイク★†",
+        "damsire": "ジツニウンチ★★★†"
+      },
+      "ムーンアステラリア★★★★": {
+        "sire": "ムーンルナティック§†",
+        "dam": "サクラヴェール",
+        "damsire": "ムーンガネットβ"
+      },
+      "ムーンセレスδ": {
+        "sire": "ムーンルナティック§†",
+        "dam": "サクラヴェール",
+        "damsire": "ムーンガネットβ"
+      },
+      "ムーンレヴァリエλ": {
+        "sire": "ムーンルナール†",
+        "dam": "サクラフィオラ",
+        "damsire": "ムーンガネットβ"
+      },
+      "メルキングギドラδ": {
+        "sire": "デュメルギドラ★★",
+        "dam": "メルヤコワハ★★★",
+        "damsire": "ピーナッツヴァルキリー"
+      },
+      "ユーフォリア": {
+        "sire": "カナシール★★★†",
+        "dam": "ナナツボシ★★",
+        "damsire": "アルルカン"
+      },
+      "リーフ努": {
+        "sire": "アグニトマホークΣ▼",
+        "dam": "アテテーサカイ豊△",
+        "damsire": "サバノカリウドΣ○"
+      },
+      "ルチカサンドリヨンλ": {
+        "sire": "ルチカエアーε†",
+        "dam": "ダイサンドストーム",
+        "damsire": "ダイハドウストーム"
+      },
+      "ルチカドレミコード★★": {
+        "sire": "ルチカターコイズ★★★†",
+        "dam": "ルチカムーンライト怪†",
+        "damsire": "ルチカルベライトΣ†"
+      },
+      "ルチカホワイトレイ": {
+        "sire": "ホワイトラインλ",
+        "dam": "ルチカアズライト豊†",
+        "damsire": "ウンチ◎"
+      },
+      "ルナシフォン怪": {
+        "sire": "ウンチ†",
+        "dam": "ルナステラー怪†",
+        "damsire": "スパークルピアサーζ◇"
+      },
+      "ルナステラーΣ": {
+        "sire": "スパークルピアサーζ◇",
+        "dam": "ステラバニーΦ●",
+        "damsire": "ナスジェネシアΨ†"
+      },
+      "ルナピアニシモ♪": {
+        "sire": "ルチカターコイズ★★★†",
+        "dam": "ルチカムーンライト怪†",
+        "damsire": "ルチカルベライトΣ†"
+      },
+      "ルナルナセブン豊": {
+        "sire": "ルナシャーロック†",
+        "dam": "ルナアーモンド★†",
+        "damsire": "カグラノチカイβ†"
+      },
+      "レーゲンタイガー§": {
+        "sire": "テノリタイガー†",
+        "dam": "ステラバニラ努",
+        "damsire": "ナスジェネシアΨ†"
+      },
+      "レーゲンニシグモ": {
+        "sire": "ナスジェネシアΨ†",
+        "dam": "レーゲンセウウン",
+        "damsire": "レーゲンテディー†"
+      },
+      "レーゲンブロッサムΨ": {
+        "sire": "レーゲンロック",
+        "dam": "サクラロードナイトβ†",
+        "damsire": "ルチカロードナイトΦ†"
+      },
+      "レーゲンリゾート怪": {
+        "sire": "レーゲンルナリ",
+        "dam": "ラストリゾート★★★†",
+        "damsire": "ルナシャーロック"
+      },
+      "レイアーキャット羅": {
+        "sire": "カナゲーム★★",
+        "dam": "シルシノキャット★★★†",
+        "damsire": "シルバーレイア"
+      },
+      "レイジングロア": {
+        "sire": "テノリタイガー†",
+        "dam": "デスブレイクλ◇",
+        "damsire": "フローパワーλ†"
+      },
+      "LOTGH★★★★": {
+        "sire": "アグニノワール",
+        "dam": "アグニローランド★★★◎",
+        "damsire": "LunaSymphogear★★★★†"
+      },
+      "アブナイレパード§": {
+        "sire": "マヌルネコノソラ★★",
+        "dam": "スカイラインレース§",
+        "damsire": "アサノターフノソラ★"
+      },
+      "エクスチルナイト": {
+        "sire": "エクスオータム暴†",
+        "dam": "チルネ†",
+        "damsire": "チルマヌカ"
+      },
+      "オバオカラニゲルナ": {
+        "sire": "ハンターショコラ",
+        "dam": "ヒールミー",
+        "damsire": "カイコッコマツリ○"
+      },
+      "オンソクミサイル暴": {
+        "sire": "HorlickSky¶†",
+        "dam": "チノサダメ†",
+        "damsire": "ヤシキハジケロ"
+      },
+      "ゴーイントゥムーン§": {
+        "sire": "ゴーイントゥシー",
+        "dam": "ルチカムーンライト怪†",
+        "damsire": "ルチカルベライトΣ†"
+      },
+      "コスノテイオーΣ": {
+        "sire": "コスノアヴァロン",
+        "dam": "コスノヴァルハラ",
+        "damsire": "オオニゲノソラ◎"
+      },
+      "コスノライセンス★★★": {
+        "sire": "コスノバスター",
+        "dam": "コスノルミエラ",
+        "damsire": "ルチカグローバル★★★†"
+      },
+      "コスノライメイ": {
+        "sire": "コスノバスター",
+        "dam": "コスノルミエラ",
+        "damsire": "ルチカグローバル★★★†"
+      },
+      "サケンダコルクλ": {
+        "sire": "サケブコルク怪",
+        "dam": "エーテルコルクΨ†",
+        "damsire": "オーバーフローλ◎"
+      },
+      "シナシナキャットβ": {
+        "sire": "ボストンタイガー",
+        "dam": "ラプシナキャットΨ",
+        "damsire": "シルバーレイア"
+      },
+      "シノレーキャット": {
+        "sire": "カナゲーム★★",
+        "dam": "シルシノキャット★★★†",
+        "damsire": "シルバーレイア"
+      },
+      "シュベルトゲベール豊": {
+        "sire": "チノバレンタイン暴†",
+        "dam": "ビッグモーターλ†",
+        "damsire": "ルナカンケル怪"
+      },
+      "スリープアテロヨ": {
+        "sire": "カイコッコマツリ○",
+        "dam": "ウルトツカイスギ",
+        "damsire": "ミスティタラ"
+      },
+      "チノファング": {
+        "sire": "チノバレンタイン暴†",
+        "dam": "ビッグモーターλ†",
+        "damsire": "ルナカンケル怪"
+      },
+      "ヒナターフ": {
+        "sire": "サイレンスヒナタ",
+        "dam": "エビマル★",
+        "damsire": "ノロイ努†"
+      },
+      "マイジャグラーβ": {
+        "sire": "ラスヌーナ★★★†",
+        "dam": "ゴーゴージャグラー",
+        "damsire": "ユウチャンショウ§■"
+      },
+      "ムーンクロス": {
+        "sire": "ムーンルナール†",
+        "dam": "サクラフィオラ",
+        "damsire": "ムーンガネットβ"
+      },
+      "リグルシナヨ★": {
+        "sire": "アクアデュエル",
+        "dam": "キタサンカックーニ",
+        "damsire": "ダイワラスク"
+      }
+    },
+    "horseRegistryIds": {
+      "870001": "ステキナコルク豊",
+      "870002": "インペリアルライン豊",
+      "870003": "エンジェルガーデン§",
+      "870004": "ナスカレント♪",
+      "870005": "スタードラグノフ★★★",
+      "870006": "リーフ努",
+      "870007": "テラコッタ羅",
+      "900001": "アグニイチバンボシΣ",
+      "900002": "アグニトマホークΣ",
+      "900003": "カオスストーム★★★",
+      "900004": "ウエサマλ",
+      "900005": "パスジェネシス★★★",
+      "930001": "ムーンアステラリア★★★★",
+      "960001": "ステラルナティック",
+      "960002": "ルチカドレミコード★★",
+      "990001": "ムーンレヴァリエλ",
+      "990002": "ジャックオランタン",
+      "1020001": "ルチカサンドリヨンλ",
+      "1050001": "カオスノヴァ",
+      "1050002": "ルナステラーΣ",
+      "1050003": "アンバージャックλ",
+      "1050004": "アナタニオクル豊",
+      "1050005": "ダレヨリマエニ怪",
+      "1080001": "ルチカホワイトレイ",
+      "1080002": "ムーンセレスδ",
+      "1110001": "ルナシフォン怪",
+      "1110002": "ルナピアニシモ♪",
+      "1140001": "ナスアダマスΩ",
+      "1140002": "ナスブラウニー",
+      "1140003": "チナッチャンΣ",
+      "1140004": "パルティータ♪",
+      "1140005": "フローデイジー",
+      "1140006": "フロートゥルーラブΣ",
+      "1140007": "タヌキトペプシトλ",
+      "1140008": "フローサプライズλ",
+      "1140009": "セーヴアヴニールΣ",
+      "1140010": "クロウトアピール★★",
+      "1140011": "ルナルナセブン豊",
+      "1140012": "マガリャンイス",
+      "1140013": "クロスウィザードΣ",
+      "1140014": "LOTGH★★★★",
+      "1140015": "コスノライセンス★★★",
+      "1140016": "コスノライメイ",
+      "1140017": "コスノテイオーΣ",
+      "1140018": "ナデオン",
+      "1140019": "レーゲンニシグモ",
+      "1140020": "ナデナデスリスリβ",
+      "1140021": "レーゲンリゾート怪",
+      "1140022": "レーゲンタイガー§",
+      "1140023": "キビトマラナイ§",
+      "1170001": "TheCosmicPuppetsΣ",
+      "1170002": "LunaLuminous¶",
+      "1170003": "アグニザッパーλ",
+      "1170004": "ケイノユメ★★★",
+      "1170005": "テディーブラウニーλ",
+      "1170006": "テディーラグドール★★★",
+      "1170007": "サバノアシタΣ",
+      "1170008": "F1GTaRm豊",
+      "1170009": "Outsight努",
+      "1200001": "Aufheben",
+      "1230001": "test",
+      "1260001": "キンダンハイゴウ",
+      "1290001": "エクボックスλ",
+      "1290002": "ネオナノガ★★★★",
+      "1290003": "ScoopRuler★★★",
+      "1290004": "オイシイマンゴー¶",
+      "1290005": "デュメルギドラ★★",
+      "1320002": "ヒナターフ",
+      "1350001": "オクラネバリンチョβ",
+      "1350002": "リグルシナヨ★",
+      "1350003": "スリープアテロヨ",
+      "1350004": "オバオカラニゲルナ",
+      "1380001": "DuoRequiem♪",
+      "1380002": "レイジングロア",
+      "1410001": "グランアルバ★★★",
+      "1410002": "GlanFictionΨ",
+      "1410003": "カナコイン§",
+      "1410004": "ユーフォリア",
+      "1410005": "マイジャグラーβ",
+      "1410006": "カナシール★★★",
+      "1410007": "ナスジェネシアΨ",
+      "1410008": "レーゲンブロッサムΨ",
+      "1410009": "エクスチルナイト",
+      "1410010": "サクラスピードγ",
+      "1410011": "エアスピードЖ",
+      "1410012": "ムーンクロス",
+      "1410013": "デュメルドーラλ",
+      "1410014": "オオイナルイチゲキ★★★",
+      "1410015": "アブナイレパード§",
+      "1410016": "ヌルセクター暴",
+      "1410017": "ツキノハリケーンα",
+      "1410018": "ツキノタイフーン怪",
+      "1410019": "Neargo",
+      "1410020": "ミルフィギドラ",
+      "1410021": "サケンダコルクλ",
+      "1410022": "ファイアストライクΣ",
+      "1410023": "ナノブースト羅",
+      "1410024": "ハローマンゴーδ",
+      "1410025": "チノファング",
+      "1410026": "ナデナデナデナデ★★★",
+      "1410027": "ゴーイントゥムーン§",
+      "1410028": "レイアーキャット羅",
+      "1410029": "シナシナキャットβ",
+      "1410030": "シュベルトゲベール豊",
+      "1410031": "メルキングギドラδ",
+      "1410032": "シノレーキャット",
+      "1410033": "シルレイキャット",
+      "1410034": "アイザック",
+      "1410035": "キガパλ",
+      "1410036": "オンソクミサイル暴"
+    },
+    "nameAliases": {
+      "jockeys": {},
+      "owners": {
+        "さば煮05": "さば煮",
+        "まっつん_": "まっつん"
       }
     }
   }
