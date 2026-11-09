@@ -65,7 +65,31 @@ body.shared-view #adminTools,body.shared-view #raceEditor,body.shared-view #merg
 body.shared-view #home button[onclick*="newRace"],body.shared-view #races button[onclick*="newRace"],body.shared-view #races button[onclick*="setDailyGround"]{display:none!important}
 body.shared-view #manage .panel,body.shared-view #adminpanel .panel{opacity:.45;pointer-events:none}
 @media(max-width:640px){#sharedBanner{padding:12px}.sharedActions{display:flex;flex-wrap:wrap;gap:5px}}
-</style><script>window.__kachuSharedReadOnly=true;</script></head><body>
+</style><script>window.__kachuSharedReadOnly=true;</script><style id="kachu-visibility-enhancement">
+/* Highly visible selection states for categorized navigation and viewing modes */
+.navgroup{border:2px solid #446157;transition:border-color .15s,background .15s,box-shadow .15s}
+.navgroup:has(button.active){border-color:#f5cf80;background:#244338;box-shadow:0 0 0 2px #f5cf8038}
+.navgroup:has(button.active)>summary{color:#ffe9b1}
+.navgroup summary:focus-visible,.navitems button:focus-visible,#sharedBanner button:focus-visible{outline:3px solid #ffe8a5;outline-offset:3px}
+.navitems button.active,nav button.active{background:#f2c76f!important;color:#122a22!important;border:2px solid #fff2c7!important;box-shadow:inset 4px 0 0 #83551c,0 0 0 2px #f2c76f55;font-weight:900}
+.navitems button.active:before{content:"● ";color:#83551c}
+.navitems button:not(.active){opacity:.76}
+.navitems button:hover{opacity:1}
+.navgroup>summary::before{content:"";display:inline-block;width:7px;height:7px;background:#758a7e;border-radius:100%;margin-right:2px}
+.navgroup:has(button.active)>summary::before{background:#ffe49a;box-shadow:0 0 0 3px #ffe49a55}
+#sharedBanner{border-bottom:3px solid #79c5a3!important;box-shadow:0 2px 12px #0005}
+#sharedBanner .sharedInfo>b{display:inline-block;padding:5px 12px;border-radius:99px;background:#235844;border:1px solid #8cd9b2;font-size:15px}
+#sharedStatus{padding-top:5px}
+#sharedBanner button{font-weight:700;border:2px solid #689981}
+#sharedBanner button:active{transform:translateY(1px)}
+body.local-edit #sharedBanner{background:#49351f!important;border-bottom-color:#ffbf62!important}
+body.local-edit #sharedBanner .sharedInfo>b{background:#7d4b1d;border-color:#ffc77e}
+body.local-edit #sharedToggle{background:#f3ca81;color:#302014;border-color:#fff0c5}
+body.shared-view #sharedToggle{background:#e1f0e8;color:#14291f;border-color:#c9e7d9}
+body.shared-loading #sharedReload{opacity:.65;cursor:progress}
+#kachuCurrentPage{display:inline-block;margin-left:12px;font-size:12px;color:#f6d18d}
+@media(max-width:640px){.navgroup:has(button.active){box-shadow:inset 0 0 0 1px #f5cf80}#sharedBanner .sharedInfo>b{font-size:13px}}
+</style></head><body>
 <header><small>VIRTUAL CENTRAL RACING ASSOCIATION</small><h1>仮想中央競馬</h1><p>レース記録・騎手・馬・馬主リーディング 統合データベース</p></header><div id="sharedBanner" role="status"><div class="sharedInfo"><b id="sharedTitle">📡 公開データを読み込み中…</b><div id="sharedStatus"><small>GitHubの共有JSONから読み込みます。ここでの変更は他の人に自動公開されません。</small></div></div><div class="sharedActions"><button id="sharedReload" onclick="kachuLoadShared()">🔄 最新を取得</button> <button id="sharedToggle" onclick="kachuToggleMode()">✏️ ローカル編集に切替</button> <button id="sharedExport" style="display:none" onclick="kachuExportShared()">📤 公開用JSON保存</button></div></div>
 <nav id="nav" aria-label="メインメニュー">
  <details class="navgroup" open><summary>🏟 レース・競馬場</summary><div class="navitems"><button class="active" data-page="home">ホーム</button><button data-page="races">各レース・結果登録</button><button data-page="raceview">レース詳細</button><button data-page="courses">競馬場詳細・特徴</button><button data-page="records">コースレコード</button></div></details>
@@ -1149,63 +1173,7 @@ function newsMake(){
  <section class="past"><h3 class="sect">過去5走馬柱</h3><table><thead><tr><th>馬</th><th>前走</th><th>2走前</th><th>3走前</th><th>4走前</th><th>5走前</th></tr></thead><tbody>${pastTable}</tbody></table></section>
  <footer>仮想中央競馬・非公式自動予想資料 ｜ 公式戦の登録済み記録のみ使用 ｜ 推測・評価を含みます。出走表CSVの読み込みで公式記録は変更されません。</footer></main>`;
  const css=`@page{size:A4 landscape;margin:11mm}*{box-sizing:border-box}body{margin:0;background:#eee;color:#1a1a1a;font:12px/1.5 "Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}.newspaper{background:white;max-width:1400px;margin:15px auto;padding:30px;box-shadow:0 4px 25px #aaa}h1,h2,h3,h4,p{margin:0 0 7px}.mast{display:flex;justify-content:space-between;border-bottom:2px solid #111;font-size:10px;letter-spacing:.06em;padding-bottom:5px}header{text-align:center;border-bottom:5px double #111;padding:10px 0}.kicker{letter-spacing:.26em;font-size:10px}header h1{font-family:serif;font-weight:900;font-size:42px;letter-spacing:.15em;line-height:1.18}.date{font-size:10px}.racehead{margin:12px 0 10px;padding:12px;background:#121e1b;color:white}.racehead h2{font-size:25px}.topstory{display:grid;grid-template-columns:1.7fr 1fr;gap:20px;padding:12px 0;border-bottom:2px solid #222}.topstory h3{font-size:20px}.side{border-left:2px solid #aaa;padding-left:15px}.sectionlabel{font-size:10px;font-weight:bold;text-transform:uppercase;border-bottom:1px solid #555;letter-spacing:.12em;margin:7px 0}.sect{font-size:19px;margin:18px 0 9px;border-left:6px solid #333;border-bottom:1px solid #555;padding:4px 9px}.sect small{font-size:10px;font-weight:normal}table{width:100%;border-collapse:collapse;font-size:10px}th,td{border:1px solid #bbb;padding:5px;text-align:left;vertical-align:top}th{background:#ddd}tbody tr:nth-child(even){background:#f7f7f7}.entries td{vertical-align:middle}.entries .mark{font-weight:bold;font-size:19px;text-align:center}.entries small{display:block;color:#555}.basis{font-size:9px}.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.phases>div{background:#f4f4f4;padding:9px}.phases h4{text-align:center;background:#182820;color:white;padding:5px}.runner{display:flex;gap:7px;border-bottom:1px dashed #aaa;padding:4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.pos{color:#666;min-width:16px}.num{font-weight:bold;border:1px solid #666;min-width:23px;text-align:center}.note{font-size:10px;color:#666}.notegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.horse-note{border-bottom:1px solid #aaa;padding:6px 2px;break-inside:avoid}.horse-note span{color:#555}.horse-note p{font-size:11px}.past td{font-size:9px;min-width:140px}.past .stay{min-width:120px}.past tr{break-inside:avoid}.muted{color:#999}footer{text-align:center;border-top:2px solid #222;margin-top:20px;padding:8px;font-size:9px;color:#555}@media print{body{background:white}.newspaper{box-shadow:none;margin:0;padding:0;max-width:none}.topstory,.phases,.horse-note,tr{break-inside:avoid}.past{break-before:page}}`;
- newsDocumentHTML='<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+newsEsc(title)+' | 仮中競馬新聞</title><style>'+css+'</style></head><body>'+paper+'<script id="kachu-shared-site">
-let kachuPublicSnapshot=null;
-let kachuCurrentMode="shared";
-function kachuStatus(title,detail){document.getElementById("sharedTitle").textContent=title;document.getElementById("sharedStatus").textContent=detail||"";}
-function kachuApplyMode(){
- const view=kachuCurrentMode==="shared";
- window.__kachuSharedReadOnly=view;
- document.body.classList.toggle("shared-view",view);
- document.body.classList.toggle("local-edit",!view);
- document.getElementById("sharedToggle").textContent=view?"✏️ ローカル編集に切替":"🌐 公開データを表示";
- document.getElementById("sharedExport").style.display=view?"none":"inline-block";
-}
-async function kachuLoadShared(){
- kachuStatus("📡 公開データを読み込み中…","GitHub Pages の data/shared.json を取得しています");
- try{
-  const response=await fetch("./data/shared.json?v="+Date.now(),{cache:"no-store"});
-  if(!response.ok)throw new Error("HTTP "+response.status);
-  const raw=await response.json(),d=raw&&raw.format==="vrca-racing"?raw.data:raw;
-  if(!d||!Array.isArray(d.races)||!Array.isArray(d.horses)||!Array.isArray(d.jockeys))throw new Error("共有データの形式が違います");
-  kachuPublicSnapshot=JSON.parse(JSON.stringify(d));
-  if(kachuCurrentMode==="shared"){
-   db=migrateCourses(migrateOwners(JSON.parse(JSON.stringify(kachuPublicSnapshot))));
-   if(!Array.isArray(db.tripleSeries))db.tripleSeries=[];
-   render();if(typeof renderAdmin==="function")renderAdmin();
-  }
-  const date=raw.exportedAt?new Date(raw.exportedAt).toLocaleString("ja-JP"):"更新日時不明";
-  kachuStatus("🌐 公開データ（全員共通）",d.races.length+"レース・"+d.horses.length+"頭 / 元データ更新日: "+date+"。GitHubの公開用JSONを更新すると全員に反映されます。");
- }catch(err){
-  kachuStatus("⚠️ 公開データを取得できません",String(err.message)+"。GitHub Pages の公開設定と data/shared.json を確認してください。");
- }finally{document.body.classList.remove("shared-loading");}
-}
-function kachuToggleMode(){
- if(kachuCurrentMode==="shared"){
-  kachuCurrentMode="local";let saved=null;
-  try{saved=JSON.parse(localStorage.getItem(KEY));}catch(e){}
-  if(!saved||!Array.isArray(saved.races)){
-   if(kachuPublicSnapshot&&confirm("このブラウザに編集データがありません。現在の公開データを編集用にコピーしますか？"))saved=JSON.parse(JSON.stringify(kachuPublicSnapshot));
-   else saved=fresh();
-  }
-  db=migrateCourses(migrateOwners(saved));
-  if(!Array.isArray(db.tripleSeries))db.tripleSeries=[];
-  kachuApplyMode();render();if(typeof renderAdmin==="function")renderAdmin();
-  kachuStatus("✏️ ローカル編集モード","この端末だけに保存されます。変更後は「公開用JSON保存」で書き出し、GitHub の data/shared.json を更新すると全員に反映されます。");
- }else{
-  kachuCurrentMode="shared";kachuApplyMode();
-  if(kachuPublicSnapshot){db=migrateCourses(migrateOwners(JSON.parse(JSON.stringify(kachuPublicSnapshot))));render();if(typeof renderAdmin==="function")renderAdmin();}
-  kachuStatus("🌐 公開データ（全員共通）","GitHubの共有データを表示中。最新の内容は「最新を取得」で更新できます。");
- }
-}
-function kachuExportShared(){
- if(kachuCurrentMode!=="local")return alert("先にローカル編集モードに切り替えてください");
- const payload={format:"vrca-racing",version:10,exportedAt:new Date().toISOString(),data:db};
- download(JSON.stringify(payload,null,2),"shared.json","application/json;charset=utf-8");
- alert("shared.json を書き出しました。GitHub の data/shared.json をこの内容に更新すると公開サイトへ反映されます。※ ダウンロードだけでは公開されません。");
-}
-document.addEventListener("DOMContentLoaded",()=>{document.body.classList.add("shared-loading");kachuApplyMode();kachuLoadShared();});
-</script></body></html>';
+ newsDocumentHTML='<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+newsEsc(title)+' | 仮中競馬新聞</title><style>'+css+'</style></head><body>'+paper+'</body></html>';
  const iframe=document.getElementById('newsPreviewFrame');iframe.srcdoc=newsDocumentHTML;document.getElementById('newsStatus').textContent=profiles.length+'頭の予想新聞を生成したよ。新しい出走表やデータを反映する場合は再生成してね。';document.getElementById('newsActions').style.display='flex';
 }
 function newsDownload(){if(!newsDocumentHTML){alert('先に新聞を生成してね');return}const blob=new Blob([newsDocumentHTML],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='仮中競馬新聞_予想_'+new Date().toISOString().slice(0,10)+'.html';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
@@ -1600,4 +1568,76 @@ list.innerHTML=manual.length ? `<div class="tablewrap"><table><thead><tr><th>相
 (function organizeStudyPanels(){const old=document.getElementById('insights');if(!old)return;for(const panel of [...old.querySelectorAll(':scope > .panel')]){const h=panel.querySelector('h3')?.textContent||'';let target=h.includes('年度表彰')?'awardsLab':h.includes('血統・産駒')?'bloodLab':h.includes('歴代名馬')?'legendsLab':'researchLab';document.getElementById(target).appendChild(panel)}
  const opts=document.getElementById('relationFilter');if(opts){const x=opts.querySelector('option[value="all"]');if(x)x.textContent='注目の関係（厳選）'}
 })();
-</script></body></html>
+</script><script id="kachu-shared-site">
+let kachuPublicSnapshot=null;
+let kachuCurrentMode="shared";
+function kachuStatus(title,detail){document.getElementById("sharedTitle").textContent=title;document.getElementById("sharedStatus").textContent=detail||"";}
+function kachuApplyMode(){
+ const view=kachuCurrentMode==="shared";
+ window.__kachuSharedReadOnly=view;
+ document.body.classList.toggle("shared-view",view);
+ document.body.classList.toggle("local-edit",!view);
+ document.getElementById("sharedToggle").textContent=view?"✏️ ローカル編集に切替":"🌐 公開データを表示";
+ document.getElementById("sharedExport").style.display=view?"none":"inline-block";
+}
+async function kachuLoadShared(){
+ kachuStatus("📡 公開データを読み込み中…","GitHub Pages の data/shared.json を取得しています");
+ try{
+  const response=await fetch("./data/shared.json?v="+Date.now(),{cache:"no-store"});
+  if(!response.ok)throw new Error("HTTP "+response.status);
+  const raw=await response.json(),d=raw&&raw.format==="vrca-racing"?raw.data:raw;
+  if(!d||!Array.isArray(d.races)||!Array.isArray(d.horses)||!Array.isArray(d.jockeys))throw new Error("共有データの形式が違います");
+  kachuPublicSnapshot=JSON.parse(JSON.stringify(d));
+  if(kachuCurrentMode==="shared"){
+   db=migrateCourses(migrateOwners(JSON.parse(JSON.stringify(kachuPublicSnapshot))));
+   if(!Array.isArray(db.tripleSeries))db.tripleSeries=[];
+   render();if(typeof renderAdmin==="function")renderAdmin();
+  }
+  const date=raw.exportedAt?new Date(raw.exportedAt).toLocaleString("ja-JP"):"更新日時不明";
+  kachuStatus("🌐 公開データ（全員共通）",d.races.length+"レース・"+d.horses.length+"頭 / 元データ更新日: "+date+"。GitHubの公開用JSONを更新すると全員に反映されます。");
+ }catch(err){
+  kachuStatus("⚠️ 公開データを取得できません",String(err.message)+"。GitHub Pages の公開設定と data/shared.json を確認してください。");
+ }finally{document.body.classList.remove("shared-loading");}
+}
+function kachuToggleMode(){
+ if(kachuCurrentMode==="shared"){
+  kachuCurrentMode="local";let saved=null;
+  try{saved=JSON.parse(localStorage.getItem(KEY));}catch(e){}
+  if(!saved||!Array.isArray(saved.races)){
+   if(kachuPublicSnapshot&&confirm("このブラウザに編集データがありません。現在の公開データを編集用にコピーしますか？"))saved=JSON.parse(JSON.stringify(kachuPublicSnapshot));
+   else saved=fresh();
+  }
+  db=migrateCourses(migrateOwners(saved));
+  if(!Array.isArray(db.tripleSeries))db.tripleSeries=[];
+  kachuApplyMode();render();if(typeof renderAdmin==="function")renderAdmin();
+  kachuStatus("✏️ ローカル編集モード","この端末だけに保存されます。変更後は「公開用JSON保存」で書き出し、GitHub の data/shared.json を更新すると全員に反映されます。");
+ }else{
+  kachuCurrentMode="shared";kachuApplyMode();
+  if(kachuPublicSnapshot){db=migrateCourses(migrateOwners(JSON.parse(JSON.stringify(kachuPublicSnapshot))));render();if(typeof renderAdmin==="function")renderAdmin();}
+  kachuStatus("🌐 公開データ（全員共通）","GitHubの共有データを表示中。最新の内容は「最新を取得」で更新できます。");
+ }
+}
+function kachuExportShared(){
+ if(kachuCurrentMode!=="local")return alert("先にローカル編集モードに切り替えてください");
+ const payload={format:"vrca-racing",version:10,exportedAt:new Date().toISOString(),data:db};
+ download(JSON.stringify(payload,null,2),"shared.json","application/json;charset=utf-8");
+ alert("shared.json を書き出しました。GitHub の data/shared.json をこの内容に更新すると公開サイトへ反映されます。※ ダウンロードだけでは公開されません。");
+}
+document.addEventListener("DOMContentLoaded",()=>{document.body.classList.add("shared-loading");kachuApplyMode();kachuLoadShared();});
+</script>
+<script id="kachu-state-clarity">
+(function(){
+const updateSelection=()=>{
+ document.querySelectorAll('nav button[data-page]').forEach(b=>{const active=b.classList.contains('active');b.setAttribute('aria-current',active?'page':'false');b.setAttribute('aria-pressed',active?'true':'false');});
+ document.querySelectorAll('nav details.navgroup').forEach(g=>{g.classList.toggle('contains-selection',!!g.querySelector('button.active'));});
+};
+document.addEventListener('DOMContentLoaded',()=>{
+ updateSelection();
+ const nav=document.getElementById('nav');if(nav){
+ nav.addEventListener('click',e=>{if(e.target.closest('button[data-page]'))requestAnimationFrame(updateSelection)});
+ new MutationObserver(updateSelection).observe(nav,{subtree:true,attributes:true,attributeFilter:['class']});
+ }
+});
+})();
+</script>
+</body></html>
