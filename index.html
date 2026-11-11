@@ -134,6 +134,14 @@ body.shared-loading #sharedReload{opacity:.65;cursor:progress}
 </section>
 <section id="prediction" class="page"><div class="bar"><div><h2>🔮 出走表CSV・公式レース予想</h2><p class="sub">出走表を読み込み、公式戦の実績とコース特徴から予想印◎→○→▲→△→☆→×を付与。序盤〜直線の展開図も表示します。公式記録は変更しません。</p></div></div>
 <div class="panel"><h3>① 出走表を読み込む</h3><p class="hint">運営用レース登録シートの横向き出走表（馬名・騎手が行、馬番が列）に対応。一般的な縦向きCSV/TSVも使用できます。馬名末尾の「号」を除いて過去成績と照合します。UTF-8 / Shift_JIS対応。</p><div class="actions"><input id="predFile" type="file" accept=".csv,.tsv,text/csv,text/tab-separated-values" onchange="predReadFile(event)"><button onclick="predParseText()">貼り付けを読み取る</button></div><textarea id="predText" rows="5" placeholder="馬名,騎手名,馬番&#10;ナスブラウニー,小雨xiaoyu,1&#10;ルナステラーΣ,RenNeko12,2"></textarea><p class="hint" id="predImportStatus">まだ読み込んでいません。</p></div>
+<div class="panel" id="predMarkdownPanel" style="border:2px solid #719f8b">
+  <h3>📋 別枠：Markdown出走表を読み込む</h3>
+  <p class="hint">DiscordやWebからコピーした「|」区切りの出走表を、そのまま貼り付けてね。<b>枠番・馬番・馬名・騎手・馬主</b>を読み取り、レース名・競馬場・馬場・距離も設定します。既存CSV入力とは別枠です。</p>
+  <textarea id="predMarkdownText" rows="7" style="width:100%;max-width:100%;resize:vertical" placeholder="| 2 | 〇G3(別定B) 立冬ステークス ケンターキー1600 | G3(別定B) | ダート | コース2 | 1 | 1 | ナデナデナデナデ★★★【号】 | さば煮05 | 神威ルカ |"></textarea>
+  <div class="actions" style="margin-top:10px"><button class="primary" onclick="predMarkdownImport()">📥 この表を予想に読み込む</button><button onclick="document.getElementById('predMarkdownText').value='';document.getElementById('predMarkdownStatus').textContent='貼り付け待ち';">入力をクリア</button></div>
+  <p id="predMarkdownStatus" class="notice" aria-live="polite">貼り付け待ち</p>
+  <p class="hint">※この欄を読み込むと予想の出走馬一覧が入れ替わります。公式レースの戦績は変更しません。馬主名は参照用で、ここから馬主登録はしません。</p>
+</div>
 <div class="panel"><h3>② 対象レースの条件</h3><div class="grid dreamgrid"><label>レース名<input id="predRaceName" placeholder="例：仮想中央競馬 GI"></label><label>競馬場<select id="predCourse" onchange="updateCourseSelect('predCourse','predSurface','predDistance')"></select></label><label>馬場<select id="predSurface" onchange="updateDistanceSelect('predCourse','predSurface','predDistance')"></select></label><label>距離<select id="predDistance"></select></label><label>馬場状態<select id="predGround"><option>良</option><option>稍重</option><option>重</option><option>不良</option></select></label></div></div>
 <div class="panel"><div class="bar"><h3>③ 出走馬・騎手を確認</h3><div class="actions"><button onclick="predAddRow()">＋ 手入力で追加</button><button class="primary" onclick="predRun()">この出走表を予想する</button></div></div><p class="hint">CSVの名前が過去成績と一致しない場合は、ここで修正できます。新馬や初騎乗も予想対象ですが、実績不足と表示します。</p><div id="predEntries" class="tablewrap"><div class="empty">CSVを読み込んでください。</div></div></div>
 <div class="panel" id="predOutput"><div class="empty">出走表を読み込むと予想結果が表示されます。</div></div></section>
@@ -612,7 +620,7 @@ let predRows=[];
 function predCSVParse(raw,sep){let rows=[],row=[],cell='',quoted=false;for(let i=0;i<raw.length;i++){const c=raw[i];if(c==='"'){if(quoted&&raw[i+1]==='"'){cell+='"';i++}else quoted=!quoted}else if(!quoted&&c===sep){row.push(cell.trim());cell=''}else if(!quoted&&(c==='\n'||c==='\r')){if(c==='\r'&&raw[i+1]==='\n')i++;row.push(cell.trim());if(row.some(x=>x))rows.push(row);row=[];cell=''}else cell+=c}row.push(cell.trim());if(row.some(x=>x))rows.push(row);return rows}
 function predNormalize(s){return String(s||'').normalize('NFKC').replace(/[\s　]+/g,'').toLowerCase()}
 function predHeaderMap(headers){let norm=headers.map(predNormalize);const locate=(terms)=>norm.findIndex(x=>terms.some(t=>x===t||x.includes(t)));return {horse:locate(['馬名','競走馬名','出走馬','horse']),jockey:locate(['騎手名','騎手','jockey','乗り手']),number:locate(['馬番','出走番号','horse number']),frame:locate(['枠番'])}}
-function predHorseClean(name){return String(name||'').trim().replace(/[\s　]*号[\s　]*$/u,'').trim()}
+function predHorseClean(name){return String(name||'').trim().replace(/(?:[\s　]*【[\s　]*号[\s　]*】|[\s　]*号)[\s　]*$/u,'').trim()}
 function predMatchMaster(name,masters,isHorse){const cleaned=isHorse?predHorseClean(name):String(name||'').trim();return masters.find(x=>x===cleaned)||masters.find(x=>predNormalize(x)===predNormalize(cleaned))||cleaned}
 function predMetaTitle(arr){const header=(arr[0]||[])[0]||'';const sub=(arr[1]||[])[0]||'';let title=header.replace(/^第\s*[0-9０-９]+\s*R\s*/i,'').trim();let surface=/(?:ダート|坂芝|平芝|芝)/.exec(sub+' '+header);let distance=/(\d{3,4})\s*(?:m|Ｍ)?\s*$/i.exec(title);return {title,surface:surface?(surface[0]==='ダート'?'ダート':'芝'):'',distance:distance?Number(distance[1]):null}}
 function predExtract(raw){raw=raw.replace(/^\uFEFF/,'').trim();if(!raw)return {error:'出走表テキストが空です'};const first=raw.split(/\r?\n/)[0];const sep=(first.match(/\t/g)||[]).length>(first.match(/,/g)||[]).length?'\t':',';const arr=predCSVParse(raw,sep);if(!arr.length)return {error:'データ行がありません'};
@@ -629,10 +637,71 @@ let head=predHeaderMap(arr[0]),start=1;
 if(head.horse<0||head.jockey<0){head=predHeaderMap(arr[1]||[]);start=2}
 if(head.horse<0||head.jockey<0)return {error:'「馬名」と「騎手」の行または列が見つからなかったよ。元のCSVをそのまま読み込んでね。'};
 const items=arr.slice(start).filter(r=>r[head.horse]&&r[head.jockey]).map(r=>({horse:predHorseClean(r[head.horse]),jockey:r[head.jockey],number:head.number>=0?r[head.number]:'',frame:head.frame>=0?r[head.frame]:''}));return {items:items.slice(0,60),total:items.length,type:'縦向きCSV'}}
+
+/* Markdown 出走表: R | レース | 格 | 馬場 | コース | 枠 | 馬番 | 馬名 | 騎手 | 馬主 | 備考 */
+function predParseMarkdownRows(raw){
+ const lines=String(raw||'').split(/\r?\n/), items=[],errors=[];let meta=null;
+ const normalize=n=>String(n||'').normalize('NFKC').trim();
+ for(let n=0;n<lines.length;n++){
+  const line=lines[n].trim();if(!line||!line.includes('|'))continue;
+  let cols=line.split('|').map(x=>x.trim());
+  if(cols[0]==='')cols.shift();if(cols[cols.length-1]==='')cols.pop();
+  if(cols.every(x=>/^[\s:—\-]*$/.test(x)))continue;
+  if(cols.length<10){if(/\d/.test(cols.join('')))errors.push((n+1)+'行目: 列が不足');continue;}
+  // Optional Markdown header row
+  if(/^(?:着順|R|レース|競走番号)$/i.test(cols[0])||/馬番/.test(cols[6]))continue;
+  const [raceNo,title,grade,surface,courseCode,frame,number,horse,jockey,owner]=cols;
+  if(!/^[0-9０-９]+$/.test(normalize(number)) || !String(horse||'').trim() || !String(jockey||'').trim()){
+   errors.push((n+1)+'行目: 馬番・馬名・騎手を確認');continue;
+  }
+  const next={number:normalize(number),frame:normalize(frame),horse:predHorseClean(horse),jockey:normalize(jockey),owner:normalize(owner),rawHorse:normalize(horse)};
+  items.push(next);
+  if(!meta){
+   const name=normalize(title).replace(/^[〇○◎▲△☆×]+\s*/u,'');
+   const dist=/(?:芝|ダート|ダ)?\s*(\d{3,4})(?:\s*m)?\s*$/i.exec(name);
+   const course=COURSE_NAMES.find(c=>name.includes(c))||
+       (name.includes('ケンターキー')?'ケンターキー競馬場':
+        name.includes('トンキョー')?'トンキョー競馬場':
+        name.includes('とりのす')?'とりのす競馬場':
+        name.includes('桜坂')?'桜坂競馬場':
+        name.includes('山央')?'山央競馬場':
+        name.includes('平安')?'平安競馬場':'');
+   meta={title:name,grade:normalize(grade),surface:/ダート|^ダ$/.test(normalize(surface))?'ダート':'芝',distance:dist?Number(dist[1]):null,course,courseCode:normalize(courseCode),raceNo:normalize(raceNo)};
+  }
+ }
+ items.sort((a,b)=>Number(a.number)-Number(b.number));
+ return items.length?{items,meta,errors}:{error:'出走馬を読み取れませんでした。馬番・馬名・騎手を含む「|」区切りの表を貼り付けてね。',errors};
+}
+function predMarkdownImport(){
+ const p=predParseMarkdownRows($('predMarkdownText').value);
+ if(p.error){$('predMarkdownStatus').textContent=p.error+(p.errors?.length?' ('+p.errors.join(' / ')+')':'');return;}
+ const unique=new Set(),rows=[];
+ for(const x of p.items){
+  if(unique.has(x.number)){p.errors.push('馬番 '+x.number+' が重複');continue;}
+  unique.add(x.number);
+  rows.push({...x,horse:predMatchMaster(x.horse,db.horses,true),jockey:predMatchMaster(x.jockey,db.jockeys,false)});
+ }
+ predRows=rows;
+ if(p.meta){
+  $('predRaceName').value=p.meta.title||'';
+  const course=p.meta.course;
+  if(course&&COURSE_NAMES.includes(course)){$('predCourse').value=course;updateCourseSelect('predCourse','predSurface','predDistance');}
+  if(p.meta.surface&&Array.from($('predSurface').options).some(o=>o.value===p.meta.surface)){
+   $('predSurface').value=p.meta.surface;updateDistanceSelect('predCourse','predSurface','predDistance');
+  }
+  if(p.meta.distance&&Array.from($('predDistance').options).some(o=>Number(o.value)===p.meta.distance))$('predDistance').value=String(p.meta.distance);
+ }
+ predRender();
+ const found=rows.filter(x=>db.horses.includes(x.horse)&&db.jockeys.includes(x.jockey)).length;
+ const warning=p.meta?.distance&&Number($('predDistance').value)!==p.meta.distance?' ⚠️ 距離 '+p.meta.distance+'m は選択中の競馬場にないため、手動確認してね。':'';
+ $('predMarkdownStatus').textContent=rows.length+'頭を読み込みました（登録馬・騎手とも一致 '+found+'頭）。'+(p.meta?.title||'')+'。'+(p.errors.length?' 要確認: '+p.errors.join(' / '):'')+warning;
+ $('predImportStatus').textContent='Markdown出走表から '+rows.length+'頭読み込み済み。予想ボタンで分析できます。';
+}
+
 async function predReadFile(event){const file=event.target.files[0];if(!file)return;const buf=await file.arrayBuffer();let utf=new TextDecoder('utf-8',{fatal:false}).decode(buf),sj=new TextDecoder('shift_jis').decode(buf);let raw=utf.includes('\uFFFD')&&sj.includes('馬')?sj:utf;let extracted=predExtract(raw);if(extracted.error&&sj!==raw){let alternate=predExtract(sj);if(!alternate.error){raw=sj;extracted=alternate}}$('predText').value=raw;predImport(raw)}
 function predParseText(){predImport($('predText').value)}
 function predImport(raw){const p=predExtract(raw);if(p.error){$('predImportStatus').textContent=p.error;return}predRows=p.items.map(r=>({...r,horse:predMatchMaster(r.horse,db.horses,true),jockey:predMatchMaster(r.jockey,db.jockeys,false)}));if(p.meta){if(p.meta.title)$('predRaceName').value=p.meta.title;if(p.meta.surface){let prefer=$('predCourse').value;const found=COURSE_NAMES.find(n=>COURSE_DATA[n].routes.some(t=>t.surface===p.meta.surface&&t.distance===p.meta.distance));$('predCourse').value=found||prefer;updateCourseSelect('predCourse','predSurface','predDistance');$('predSurface').value=p.meta.surface;updateDistanceSelect('predCourse','predSurface','predDistance');}if(p.meta.distance&&Array.from($('predDistance').options).some(o=>Number(o.value)===p.meta.distance))$('predDistance').value=p.meta.distance}const matched=predRows.filter(r=>db.horses.includes(r.horse)&&db.jockeys.includes(r.jockey)).length;$('predImportStatus').textContent=p.total+'頭を読み込みました（'+(p.type||'CSV')+'）。馬・騎手ともに登録済み：'+matched+'頭／'+predRows.length+'頭。'+(p.total>60?'先頭60頭のみ表示。':'')+'名前とレース条件を確認してね。';predRender()}
-function predRender(){const el=$('predEntries');if(!predRows.length){el.innerHTML='<div class="empty">出走馬がありません。</div>';return}let horses=new Set(db.horses),jockeys=new Set(db.jockeys);el.innerHTML='<table><thead><tr><th>馬番</th><th>馬名</th><th>騎手</th><th>登録状況</th><th></th></tr></thead><tbody>'+predRows.map((r,i)=>{const ok=horses.has(r.horse)&&jockeys.has(r.jockey);return '<tr><td><input style="width:58px" value="'+esc(r.number)+'" onchange="predEdit('+i+',\'number\',this.value)"></td><td><input style="min-width:150px;width:100%" list="predHorseMaster" value="'+esc(r.horse)+'" onchange="predEdit('+i+',\'horse\',this.value)"></td><td><input style="min-width:140px;width:100%" list="predJockeyMaster" value="'+esc(r.jockey)+'" onchange="predEdit('+i+',\'jockey\',this.value)"></td><td>'+(ok?'登録済み':'<span class="muted">未登録名あり</span>')+'</td><td><button class="danger" onclick="predRemove('+i+')">×</button></td></tr>'}).join('')+'</tbody></table><datalist id="predHorseMaster">'+db.horses.map(h=>'<option value="'+esc(h)+'"></option>').join('')+'</datalist><datalist id="predJockeyMaster">'+db.jockeys.map(j=>'<option value="'+esc(j)+'"></option>').join('')+'</datalist>'}
+function predRender(){const el=$('predEntries');if(!predRows.length){el.innerHTML='<div class="empty">出走馬がありません。</div>';return}let horses=new Set(db.horses),jockeys=new Set(db.jockeys);el.innerHTML='<table><thead><tr><th>枠番</th><th>馬番</th><th>馬名</th><th>騎手</th><th>馬主（参照）</th><th>登録状況</th><th></th></tr></thead><tbody>'+predRows.map((r,i)=>{const ok=horses.has(r.horse)&&jockeys.has(r.jockey);return '<tr><td><input style="width:48px" value="'+esc(r.frame||'')+'" onchange="predEdit('+i+,\'frame\',this.value)"></td><td><input style="width:58px" value="'+esc(r.number)+'" onchange="predEdit('+i+',\'number\',this.value)"></td><td><input style="min-width:150px;width:100%" list="predHorseMaster" value="'+esc(r.horse)+'" onchange="predEdit('+i+',\'horse\',this.value)"></td><td><input style="min-width:140px;width:100%" list="predJockeyMaster" value="'+esc(r.jockey)+'" onchange="predEdit('+i+',\'jockey\',this.value)"></td><td><input style="min-width:115px;width:100%" value="'+esc(r.owner||'')+'" onchange="predEdit('+i+,\'owner\',this.value)"></td><td>'+(ok?'登録済み':'<span class="muted">未登録名あり</span>')+'</td><td><button class="danger" onclick="predRemove('+i+')">×</button></td></tr>'}).join('')+'</tbody></table><datalist id="predHorseMaster">'+db.horses.map(h=>'<option value="'+esc(h)+'"></option>').join('')+'</datalist><datalist id="predJockeyMaster">'+db.jockeys.map(j=>'<option value="'+esc(j)+'"></option>').join('')+'</datalist>'}
 function predEdit(i,key,value){if(predRows[i])predRows[i][key]=value;predRender()}
 function predRemove(i){predRows.splice(i,1);predRender()}
 function predAddRow(){predRows.push({number:String(predRows.length+1),horse:'',jockey:''});predRender()}
